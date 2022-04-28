@@ -4,7 +4,7 @@
 <br>
 
 <div>
-   <a href="https://drive.google.com/file/d/1wH9R1NDYgZQeGx2D5F_L4RKI3C9Bwawp/view?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+   <a href="https://colab.research.google.com/github/charlesnchr/ERnet-v2/blob/master/ERnet.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
    <!-- <a href="https://zenodo.org/badge/latestdoi/264818686"><img src="https://zenodo.org/badge/264818686.svg" alt="YOLOv5 Citation"></a> -->
 </div>
 
@@ -18,7 +18,7 @@ ERnet is a vision transformer-based processing pipeline for segmentation and ana
 Get started right away with our Colab notebooks. If you prefer running the code locally, we provide Jupyter notebooks and Python scripts in this repository. Another option for running ERnet is to use it as a plugin in the graphical front-end, Mambio, based on an integration of the Electron UI framework and a Python environment. Mambio is also included in this repository.
 
 <div align="center">
-    <a href="https://colab.research.google.com/github/ultralytics/yolov5/blob/master/tutorial.ipynb">
+    <a href="https://colab.research.google.com/github/charlesnchr/ERnet-v2/blob/master/ERnet.ipynb">
         <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-colab-small.png" width="15%"/>
     </a>
 </div>
