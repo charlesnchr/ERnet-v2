@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "mambio"
+version = "0.1.2"
+description = "Machine learning multi analysis batch IO"
+authors = ["Charles N. Christensen <charles.n.chr@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+scikit-image = "^0.19.2"
+pytorch = "^1.0.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

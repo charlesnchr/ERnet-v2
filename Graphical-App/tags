@@ -1,0 +1,1094 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/cc/Github/charlesnchr-dev/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+#imgcontainer div	src/App.css	/^#imgcontainer div  {$/;"	s
+#imgcontainer img	src/App.css	/^#imgcontainer img {$/;"	s
+.App	src/App.css	/^.App {$/;"	c
+.App-header	src/App.css	/^.App-header {$/;"	c
+.App-intro	src/App.css	/^.App-intro {$/;"	c
+.App-logo	src/App.css	/^.App-logo {$/;"	c
+.boldtext	src/App.css	/^.boldtext { $/;"	c
+.calcStatus	src/App.css	/^.calcStatus {$/;"	c
+.draggable	src/App.css	/^.draggable {$/;"	c
+.folderEntry	src/App.css	/^.folderEntry {$/;"	c
+.folderEntry:hover	src/App.css	/^.folderEntry:hover {$/;"	c
+.headerText	src/App.css	/^.headerText { $/;"	c
+.modelSelect	src/App.css	/^.modelSelect {$/;"	c
+.nondraggable	src/App.css	/^.nondraggable {$/;"	c
+.selectInput	src/App.css	/^.selectInput {$/;"	c
+.selectedFolderEntry	src/App.css	/^.selectedFolderEntry {$/;"	c
+.selectedFolderEntry:hover	src/App.css	/^.selectedFolderEntry:hover {$/;"	c
+.sidepanelSection	src/App.css	/^.sidepanelSection {$/;"	c
+0	.minio.sys/buckets/pyengine/policy.json	/^{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":["*"]},"Action":["s3:G/;"	o	array:Statement
+0	.minio.sys/buckets/pyengine/policy.json	/^{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":["*"]},"Action":["s3:G/;"	s	array:Statement.0.Action
+0	.minio.sys/buckets/pyengine/policy.json	/^{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":["*"]},"Action":["s3:G/;"	s	array:Statement.0.Principal.AWS
+0	.minio.sys/buckets/pyengine/policy.json	/^{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":["*"]},"Action":["s3:G/;"	s	array:Statement.0.Resource
+0	.minio.sys/buckets/pyengine/policy.json	/^{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":["*"]},"Action":["s3:G/;"	s	array:Statement.1.Action
+0	.minio.sys/buckets/pyengine/policy.json	/^{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":["*"]},"Action":["s3:G/;"	s	array:Statement.1.Principal.AWS
+0	.minio.sys/buckets/pyengine/policy.json	/^{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":["*"]},"Action":["s3:G/;"	s	array:Statement.1.Resource
+0	package.json	/^      ">0.2%",$/;"	s	array:browserslist.production
+0	package.json	/^      "last 1 chrome version",$/;"	s	array:browserslist.development
+0	package.json	/^      {$/;"	o	array:build.publish
+0	package.json	/^    ".",$/;"	s	array:workspaces
+0	public/manifest.json	/^    {$/;"	o	array:icons
+1	.minio.sys/buckets/pyengine/policy.json	/^{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":["*"]},"Action":["s3:G/;"	o	array:Statement
+1	.minio.sys/buckets/pyengine/policy.json	/^{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":["*"]},"Action":["s3:G/;"	s	array:Statement.0.Action
+1	package.json	/^      "last 1 firefox version",$/;"	s	array:browserslist.development
+1	package.json	/^      "not dead",$/;"	s	array:browserslist.production
+1	package.json	/^    "pyengine"$/;"	s	array:workspaces
+1	src/Plugin_ERNet.js	/^            spacing={1}$/;"	M	class:container
+2	package.json	/^      "last 1 safari version"$/;"	s	array:browserslist.development
+2	package.json	/^      "not op_mini all"$/;"	s	array:browserslist.production
+::-webkit-scrollbar	src/App.css	/^::-webkit-scrollbar {$/;"	s
+::-webkit-scrollbar-thumb	src/App.css	/^::-webkit-scrollbar-thumb {$/;"	s
+::-webkit-scrollbar-thumb:hover	src/App.css	/^::-webkit-scrollbar-thumb:hover {$/;"	s
+::-webkit-scrollbar-track	src/App.css	/^::-webkit-scrollbar-track {$/;"	s
+@blueprintjs/core	package.json	/^    "@blueprintjs\/core": "^3.25.0",$/;"	s	object:dependencies
+@material-ui/core	package.json	/^    "@material-ui\/core": "^4.9.0",$/;"	s	object:dependencies
+@material-ui/icons	package.json	/^    "@material-ui\/icons": "^4.5.1",$/;"	s	object:dependencies
+AWS	.minio.sys/buckets/pyengine/policy.json	/^{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":["*"]},"Action":["s3:G/;"	a	object:Statement.0.Principal
+AWS	.minio.sys/buckets/pyengine/policy.json	/^{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":["*"]},"Action":["s3:G/;"	a	object:Statement.1.Principal
+AboutMenu	src/AboutMenu.js	/^export default function AboutMenu(props) {$/;"	f
+Action	.minio.sys/buckets/pyengine/policy.json	/^{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":["*"]},"Action":["s3:G/;"	a	object:Statement.0
+Action	.minio.sys/buckets/pyengine/policy.json	/^{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":["*"]},"Action":["s3:G/;"	a	object:Statement.1
+AnonymousFunction065446a70100	pyengine/util/pyzip.js	/^output.on("close", function() {$/;"	f
+AnonymousFunction065446a70200	pyengine/util/pyzip.js	/^output.on("end", function() {$/;"	f
+AnonymousFunction065446a70300	pyengine/util/pyzip.js	/^archive.on("warning", function(err) {$/;"	f
+AnonymousFunction065446a70400	pyengine/util/pyzip.js	/^archive.on("error", function(err) {$/;"	f
+AnonymousFunction14820e0a0100	public/EngineCommunication.js	/^  client.connect(5002, "127.0.0.1", function() {$/;"	f
+AnonymousFunction14820e0a0200	public/EngineCommunication.js	/^  client.on("data", function(data) {$/;"	f
+AnonymousFunction14820e0a0300	public/EngineCommunication.js	/^  client.on("close", function() {$/;"	f
+AnonymousFunction17742fa40100	src/Img.js	/^          function() {$/;"	c	class:Img.getThumb
+AnonymousFunction31dca9860100	pyengine/util/pyfinalize.js	/^  fd.on("end", function () {$/;"	f
+AnonymousFunction6ef1cce50100	public/EngineSetup.js	/^    fd.on("end", function() {$/;"	f
+AnonymousFunction6ef1cce50200	public/EngineSetup.js	/^                    rimraf(path.join(enginedir, pathname), function() {$/;"	f
+AnonymousFunction7af232780100	src/FileUtils.js	/^    fs.readdir(dir, function(err, list) {$/;"	f
+AnonymousFunction7af232780200	src/FileUtils.js	/^      list.forEach(function(file) {$/;"	f
+AnonymousFunction7af232780300	src/FileUtils.js	/^          walk(root, filepath, function(err, res) {$/;"	f	function:AnonymousFunction7af232780200
+AnonymousFunction7af232780400	src/FileUtils.js	/^  dirs.forEach(function(dir) {$/;"	f
+AnonymousFunction7af232780500	src/FileUtils.js	/^    walk(dir, dir, function(err, res) {$/;"	f	function:AnonymousFunction7af232780400
+AnonymousFunction7af232780600	src/FileUtils.js	/^        dirs.forEach(function(dir) {$/;"	f
+AnonymousFunction7af232780700	src/FileUtils.js	/^          filepaths: files.map(function(file) {$/;"	f	function:AnonymousFunction7af232780400.AnonymousFunction7af232780500
+AnonymousFunction7af232780800	src/FileUtils.js	/^    filepaths: files.map(function(file) {$/;"	f
+AnonymousFunction9dc333180100	util/download_models.js	/^  fd.on("end", function() {$/;"	f
+AnonymousFunctionb3e1a3a70100	src/ImgContainer.js	/^        function() {$/;"	c	class:ImgContainer.checkForServerActive
+AnonymousFunctionc827d6fa0100	public/electron.js	/^crypto.randomBytes(16, function(err, buffer) {$/;"	f
+AnonymousFunctionc827d6fa0200	public/electron.js	/^      setTimeout(function() {$/;"	f	function:checkUpdate
+AnonymousFunctiond93650720100	src/Archive/electron-wait-react.js	/^            electron.stdout.on("data", function(data) {$/;"	f
+App	pyengine/pysrc/ptqtgraphTest.py	/^class App(QtGui.QMainWindow):$/;"	c
+App	pyengine/pysrc/temp.py	/^class App(QtGui.QMainWindow):$/;"	c
+App	src/App.js	/^class App extends Component {$/;"	c
+AppUpdate	src/AppUpdate.js	/^export default function AppUpdate() {$/;"	f
+AssembleStacks	pyengine/pysrc/ernet.py	/^def AssembleStacks(basefolder):$/;"	f
+AsyncModel	pyengine/pysrc/mlsim_misc.py	/^class AsyncModel:$/;"	c
+BasicLayer	pyengine/pysrc/swin3d_rcab3_arch.py	/^class BasicLayer(nn.Module):$/;"	c
+BasicLayer	pyengine/pysrc/swinir_rcab_arch.py	/^class BasicLayer(nn.Module):$/;"	c
+BrowserWindow	public/electron.js	/^const BrowserWindow = electron.BrowserWindow;$/;"	C
+CALayer	pyengine/pysrc/ernet.py	/^class CALayer(nn.Module):$/;"	c
+CALayer	pyengine/pysrc/mlsim_models.py	/^class CALayer(nn.Module):$/;"	c
+CalcStatus	src/CalcStatus.js	/^class CalcStatus extends Component {$/;"	c
+ChannelAttention	pyengine/pysrc/swin3d_rcab3_arch.py	/^class ChannelAttention(nn.Module):$/;"	c
+ChannelAttention	pyengine/pysrc/swinir_rcab_arch.py	/^class ChannelAttention(nn.Module):$/;"	c
+Compilation on Mac	README.md	/^### Compilation on Mac$/;"	S	chapter:charlesnchr-dev
+DropPath	pyengine/pysrc/swinir_rcab_arch.py	/^class DropPath(nn.Module):$/;"	c
+EDSR	pyengine/pysrc/mlsim_models.py	/^class EDSR(nn.Module):$/;"	c
+ERnet Transformer	ERnet-Transformer.md	/^# ERnet Transformer$/;"	c
+Effect	.minio.sys/buckets/pyengine/policy.json	/^{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":["*"]},"Action":["s3:G/;"	s	object:Statement.0
+Effect	.minio.sys/buckets/pyengine/policy.json	/^{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":["*"]},"Action":["s3:G/;"	s	object:Statement.1
+EvaluateModel	pyengine/pysrc/ernet.py	/^def EvaluateModel(opt,conn,graph_metrics=False):$/;"	f
+EvaluateModel	pyengine/pysrc/mlsim_lib.py	/^def EvaluateModel(net, opt, stack, outfile=None):$/;"	f
+EvaluateModel	pyengine/pysrc/time_benchmark_mlsim.py	/^def EvaluateModel(net, opt, stackdir, outfile):$/;"	f
+EvaluateModelRealtime	pyengine/pysrc/mlsim_lib.py	/^def EvaluateModelRealtime(net, opt, stack):$/;"	f
+EvaluateModelRealtimeAsync	pyengine/pysrc/mlsim_lib.py	/^def EvaluateModelRealtimeAsync(asyncmodel, opt, stack):$/;"	f
+EvaluateModel_rep	pyengine/pysrc/time_benchmark_mlsim.py	/^def EvaluateModel_rep(net, opt, stackdir, outfile):$/;"	f
+F	pyengine/pysrc/mlsim_lib.py	/^import torch.nn.functional as F$/;"	I	nameref:module:torch.nn.functional
+F	pyengine/pysrc/mlsim_models.py	/^import torch.nn.functional as F$/;"	I	nameref:module:torch.nn.functional
+F	pyengine/pysrc/swin3d_rcab3_arch.py	/^import torch.nn.functional as F$/;"	I	nameref:module:torch.nn.functional
+F	pyengine/pysrc/time_benchmark_mlsim.py	/^import torch.nn.functional as F$/;"	I	nameref:module:torch.nn.functional
+FileUtils	src/App.js	/^var FileUtils = require(".\/FileUtils.js");$/;"	v
+GetCachefolder	pyengine/pysrc/misc.py	/^def GetCachefolder():$/;"	f
+GetModel	pyengine/pysrc/mlsim_models.py	/^def GetModel(opt):$/;"	f
+GetOptions	pyengine/pysrc/mlsim_lib.py	/^def GetOptions():$/;"	f
+GetOptions	pyengine/pysrc/time_benchmark_mlsim.py	/^def GetOptions():$/;"	f
+GetOptions_allRnd	pyengine/pysrc/mlsim_lib.py	/^def GetOptions_allRnd():$/;"	f
+GetOptions_allRnd	pyengine/pysrc/time_benchmark_mlsim.py	/^def GetOptions_allRnd():$/;"	f
+GetThumb	pyengine/pysrc/misc.py	/^def GetThumb(args):$/;"	f
+Github repository	ERnet-Transformer.md	/^#### Github repository$/;"	t	subsection:ERnet Transformer""Try it""Preceding work
+Grid	src/ImgsizeSlider.js	/^          <Grid className="nondraggable" item>$/;"	M	class:ImgsizeSlider
+Grid	src/Plugin_SIM.js	/^            <Grid item>$/;"	M	class:Plugin_SIM
+Grid	src/Plugin_SIM.js	/^          <Grid$/;"	M	class:Plugin_SIM
+Grid	src/SidePanel.js	/^        <Grid item style={{ width: "80%" }}>$/;"	M	class:SidePanel
+ImageIcon	src/ImgsizeSlider.js	/^            <ImageIcon \/>$/;"	M	class:ImgsizeSlider
+ImageView	src/ImageView.js	/^class ImageView extends Component {$/;"	c
+Img	src/Img.js	/^class Img extends Component {$/;"	c
+ImgContainer	src/ImgContainer.js	/^class ImgContainer extends Component {$/;"	c
+ImgsizeSlider	src/ImgsizeSlider.js	/^export default class ImgsizeSlider extends Component {$/;"	c
+LoadModel	pyengine/pysrc/mlsim_lib.py	/^def LoadModel(opt):$/;"	f
+LoadModel	pyengine/pysrc/time_benchmark_mlsim.py	/^def LoadModel(opt):$/;"	f
+ML	src/Plugin_SIM.js	/^                &nbsp; Run ML-SIM$/;"	M	class:Plugin_SIM
+MM_integration	src/Plugin_SIM.js	/^        MM_integration: false$/;"	p	class:Plugin_SIM.constructor.state
+MM_integration_handler	src/Plugin_SIM.js	/^  MM_integration_handler() {$/;"	m	class:Plugin_SIM
+MM_path	test_MicroManager_python_lib/MicroManager_ImageStream.py	/^MM_path = 'C:\\\\Program Files\\\\Micro-Manager-1.4'$/;"	v
+MM_path	test_MicroManager_python_lib/SIM_PC_MicroManager_ImageStream.py	/^MM_path = 'C:\\\\Program Files\\\\Micro-Manager-2.0gamma'$/;"	v
+Mambio	ERnet-Transformer.md	/^### Mambio$/;"	S	section:ERnet Transformer""Try it
+Mambio: Multi-analysis machine-learning batching I/O	public/index.html	/^    <title>Mambio: Multi-analysis machine-learning batching I\/O <\/title>$/;"	j
+Menu	src/WindowMenu.js	/^const Menu = remote.Menu;$/;"	C
+Mlp	pyengine/pysrc/swin3d_rcab3_arch.py	/^class Mlp(nn.Module):$/;"	c
+Mlp	pyengine/pysrc/swinir_rcab_arch.py	/^class Mlp(nn.Module):$/;"	c
+Nblock	src/ImgContainer.js	/^      Nblock: g.Nblock,$/;"	p	class:ImgContainer.constructor.state
+PatchEmbed	pyengine/pysrc/swinir_rcab_arch.py	/^class PatchEmbed(nn.Module):$/;"	c
+PatchEmbed3D	pyengine/pysrc/swin3d_rcab3_arch.py	/^class PatchEmbed3D(nn.Module):$/;"	c
+PatchMerging	pyengine/pysrc/swin3d_rcab3_arch.py	/^class PatchMerging(nn.Module):$/;"	c
+PatchMerging	pyengine/pysrc/swinir_rcab_arch.py	/^class PatchMerging(nn.Module):$/;"	c
+PatchUnEmbed	pyengine/pysrc/swinir_rcab_arch.py	/^class PatchUnEmbed(nn.Module):$/;"	c
+PatchUnEmbed3D	pyengine/pysrc/swin3d_rcab3_arch.py	/^class PatchUnEmbed3D(nn.Module):$/;"	c
+PluginComponents	src/SidePanel.js	/^class PluginComponents extends Component {$/;"	c
+Plugin_SIM	src/Plugin_ERNet.js	/^export default class Plugin_SIM extends Component {$/;"	c
+Plugin_SIM	src/Plugin_SIM.js	/^export default class Plugin_SIM extends Component {$/;"	c
+Preceding work	ERnet-Transformer.md	/^### Preceding work$/;"	S	section:ERnet Transformer""Try it
+Principal	.minio.sys/buckets/pyengine/policy.json	/^{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":["*"]},"Action":["s3:G/;"	o	object:Statement.0
+Principal	.minio.sys/buckets/pyengine/policy.json	/^{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":["*"]},"Action":["s3:G/;"	o	object:Statement.1
+Processing	src/App.js	/^            Processing of your images can begin.$/;"	M	class:App
+RCAB	pyengine/pysrc/ernet.py	/^class RCAB(nn.Module):$/;"	c
+RCAB	pyengine/pysrc/mlsim_models.py	/^class RCAB(nn.Module):$/;"	c
+RCAB	pyengine/pysrc/swin3d_rcab3_arch.py	/^class RCAB(nn.Module):$/;"	c
+RCAB	pyengine/pysrc/swinir_rcab_arch.py	/^class RCAB(nn.Module):$/;"	c
+RCAN	pyengine/pysrc/ernet.py	/^class RCAN(nn.Module):$/;"	c
+RCAN	pyengine/pysrc/mlsim_models.py	/^class RCAN(nn.Module):$/;"	c
+RSTB	pyengine/pysrc/swinir_rcab_arch.py	/^class RSTB(nn.Module):$/;"	c
+RSTB3D	pyengine/pysrc/swin3d_rcab3_arch.py	/^class RSTB3D(nn.Module):$/;"	c
+ResBlock	pyengine/pysrc/mlsim_models.py	/^class ResBlock(nn.Module):$/;"	c
+ResidualGroup	pyengine/pysrc/ernet.py	/^class ResidualGroup(nn.Module):$/;"	c
+ResidualGroup	pyengine/pysrc/mlsim_models.py	/^class ResidualGroup(nn.Module):$/;"	c
+ResidualGroup	pyengine/pysrc/swin3d_rcab3_arch.py	/^class ResidualGroup(nn.Module):$/;"	c
+ResidualGroup	pyengine/pysrc/swinir_rcab_arch.py	/^class ResidualGroup(nn.Module):$/;"	c
+Resource	.minio.sys/buckets/pyengine/policy.json	/^{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":["*"]},"Action":["s3:G/;"	a	object:Statement.0
+Resource	.minio.sys/buckets/pyengine/policy.json	/^{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":["*"]},"Action":["s3:G/;"	a	object:Statement.1
+Run	src/Plugin_SIM.js	/^                &nbsp; Run ML-SIM$/;"	M	class:Plugin_SIM
+SIM	src/Plugin_SIM.js	/^                &nbsp; Run ML-SIM$/;"	M	class:Plugin_SIM
+Science Advances publication	ERnet-Transformer.md	/^#### Science Advances publication$/;"	t	subsection:ERnet Transformer""Try it""Preceding work
+SetCachefolder	pyengine/pysrc/misc.py	/^def SetCachefolder(value):$/;"	f
+SetUseCloud	pyengine/pysrc/misc.py	/^def SetUseCloud(val):$/;"	f
+SidePanel	src/SidePanel.js	/^class SidePanel extends Component {$/;"	c
+SimpleBackdrop	src/SimpleBackdrop.js	/^export default function SimpleBackdrop() {$/;"	f
+Statement	.minio.sys/buckets/pyengine/policy.json	/^{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":["*"]},"Action":["s3:G/;"	a
+Store	public/EngineCommunication.js	/^const Store = require("electron-store");$/;"	C
+Store	public/EngineSetup.js	/^const Store = require("electron-store");$/;"	C
+Store	public/electron.js	/^const Store = require("electron-store");$/;"	C
+Store	src/AboutMenu.js	/^const Store = window.require("electron-store");$/;"	C
+Store	src/App.js	/^const Store = window.require("electron-store");$/;"	C
+Store	src/SidePanel.js	/^const Store = window.require("electron-store");$/;"	C
+Store	src/WindowMenu.js	/^const Store = window.require("electron-store");$/;"	C
+SwinIR_RCAB	pyengine/pysrc/swinir_rcab_arch.py	/^class SwinIR_RCAB(nn.Module):$/;"	c
+SwinTransformer3D_RCAB	pyengine/pysrc/swin3d_rcab3_arch.py	/^class SwinTransformer3D_RCAB(nn.Module):$/;"	c
+SwinTransformerBlock	pyengine/pysrc/swinir_rcab_arch.py	/^class SwinTransformerBlock(nn.Module):$/;"	c
+SwinTransformerBlock3D	pyengine/pysrc/swin3d_rcab3_arch.py	/^class SwinTransformerBlock3D(nn.Module):$/;"	c
+TabPanel	src/SettingsMenu.js	/^function TabPanel(props) {$/;"	f
+ThemeProvider	src/Plugin_SIM.js	/^              <ThemeProvider theme={mytheme}>$/;"	M	class:Plugin_SIM
+Try it	ERnet-Transformer.md	/^## Try it$/;"	s	chapter:ERnet Transformer
+Upsample	pyengine/pysrc/swin3d_rcab3_arch.py	/^class Upsample(nn.Sequential):$/;"	c
+Upsample	pyengine/pysrc/swinir_rcab_arch.py	/^class Upsample(nn.Sequential):$/;"	c
+UpsampleOneStep	pyengine/pysrc/swinir_rcab_arch.py	/^class UpsampleOneStep(nn.Sequential):$/;"	c
+Upsampler	pyengine/pysrc/mlsim_models.py	/^class Upsampler(nn.Sequential):$/;"	c
+Upsampler	pyengine/pysrc/swin3d_rcab3_arch.py	/^class Upsampler(nn.Module):$/;"	c
+VGG	pyengine/pysrc/vgg.py	/^class VGG(nn.Module):$/;"	c
+Version	.minio.sys/buckets/pyengine/policy.json	/^{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"AWS":["*"]},"Action":["s3:G/;"	s
+Vision Transformer applied to segmentation of endoplasmic reticulum (ER) image sequences	ERnet-Transformer.md	/^## Vision Transformer applied to segmentation of endoplasmic reticulum (ER) image sequences$/;"	s	chapter:ERnet Transformer
+WindowAttention	pyengine/pysrc/swinir_rcab_arch.py	/^class WindowAttention(nn.Module):$/;"	c
+WindowAttention3D	pyengine/pysrc/swin3d_rcab3_arch.py	/^class WindowAttention3D(nn.Module):$/;"	c
+WindowMenuRender	src/WindowMenu.js	/^const WindowMenuRender = (checkedPlugins) => {$/;"	C
+__all__	pyengine/pysrc/vgg.py	/^__all__ = [$/;"	v
+__init__	pyengine/pysrc/ernet.py	/^    def __init__($/;"	m	class:RCAB
+__init__	pyengine/pysrc/ernet.py	/^    def __init__(self, channel, reduction=16):$/;"	m	class:CALayer
+__init__	pyengine/pysrc/ernet.py	/^    def __init__(self, conv, n_feat, kernel_size, reduction, act, res_scale, n_resblocks):$/;"	m	class:ResidualGroup
+__init__	pyengine/pysrc/ernet.py	/^    def __init__(self, opt):$/;"	m	class:RCAN
+__init__	pyengine/pysrc/mlsim_misc.py	/^    def __init__(self, opt):$/;"	m	class:AsyncModel
+__init__	pyengine/pysrc/mlsim_models.py	/^    def __init__($/;"	m	class:RCAB
+__init__	pyengine/pysrc/mlsim_models.py	/^    def __init__($/;"	m	class:ResBlock
+__init__	pyengine/pysrc/mlsim_models.py	/^    def __init__(self, channel, reduction=16):$/;"	m	class:CALayer
+__init__	pyengine/pysrc/mlsim_models.py	/^    def __init__(self, conv, n_feat, kernel_size, reduction, act, res_scale, n_resblocks):$/;"	m	class:ResidualGroup
+__init__	pyengine/pysrc/mlsim_models.py	/^    def __init__(self, conv, scale, n_feats, bn=False, act=False, bias=True):$/;"	m	class:Upsampler
+__init__	pyengine/pysrc/mlsim_models.py	/^    def __init__(self, opt):$/;"	m	class:EDSR
+__init__	pyengine/pysrc/mlsim_models.py	/^    def __init__(self, opt):$/;"	m	class:RCAN
+__init__	pyengine/pysrc/ptqtgraphTest.py	/^    def __init__(self, parent=None):$/;"	m	class:App
+__init__	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def __init__(self, dim, norm_layer=nn.LayerNorm):$/;"	m	class:PatchMerging
+__init__	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def __init__(self, dim, num_heads, window_size=(2,7,7), shift_size=(0,0,0),$/;"	m	class:SwinTransformerBlock3D
+__init__	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def __init__(self, dim, window_size, num_heads, qkv_bias=False, qk_scale=None, attn_drop=0.,/;"	m	class:WindowAttention3D
+__init__	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def __init__(self, in_features, hidden_features=None, out_features=None, act_layer=nn.GELU, /;"	m	class:Mlp
+__init__	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def __init__(self, num_feat, num_block, squeeze_factor=16, res_scale=1):$/;"	m	class:ResidualGroup
+__init__	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def __init__(self, num_feat, squeeze_factor=16):$/;"	m	class:ChannelAttention
+__init__	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def __init__(self, num_feat, squeeze_factor=16, res_scale=1):$/;"	m	class:RCAB
+__init__	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def __init__(self, patch_size=(3,4,4), in_chans=3, embed_dim=96, norm_layer=None):$/;"	m	class:PatchEmbed3D
+__init__	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def __init__(self, patch_size=(3,4,4), in_chans=3, embed_dim=96, norm_layer=nn.LayerNorm):$/;"	m	class:PatchUnEmbed3D
+__init__	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def __init__(self, patch_size=(3,4,4), in_chans=3, embed_dim=96, norm_layer=nn.LayerNorm):$/;"	m	class:Upsampler
+__init__	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def __init__(self, scale, num_feat):$/;"	m	class:Upsample
+__init__	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def __init__(self,$/;"	m	class:BasicLayer
+__init__	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def __init__(self,$/;"	m	class:RSTB3D
+__init__	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def __init__(self,$/;"	m	class:SwinTransformer3D_RCAB
+__init__	pyengine/pysrc/swinir_rcab_arch.py	/^    def __init__(self, dim, window_size, num_heads, qkv_bias=True, qk_scale=None, attn_drop=0., /;"	m	class:WindowAttention
+__init__	pyengine/pysrc/swinir_rcab_arch.py	/^    def __init__(self, drop_prob=None):$/;"	m	class:DropPath
+__init__	pyengine/pysrc/swinir_rcab_arch.py	/^    def __init__(self, img_size=224, patch_size=4, in_chans=3, embed_dim=96, norm_layer=None):$/;"	m	class:PatchEmbed
+__init__	pyengine/pysrc/swinir_rcab_arch.py	/^    def __init__(self, img_size=224, patch_size=4, in_chans=3, embed_dim=96, norm_layer=None):$/;"	m	class:PatchUnEmbed
+__init__	pyengine/pysrc/swinir_rcab_arch.py	/^    def __init__(self, in_features, hidden_features=None, out_features=None, act_layer=nn.GELU, /;"	m	class:Mlp
+__init__	pyengine/pysrc/swinir_rcab_arch.py	/^    def __init__(self, input_resolution, dim, norm_layer=nn.LayerNorm):$/;"	m	class:PatchMerging
+__init__	pyengine/pysrc/swinir_rcab_arch.py	/^    def __init__(self, num_feat, num_block, squeeze_factor=16, res_scale=1):$/;"	m	class:ResidualGroup
+__init__	pyengine/pysrc/swinir_rcab_arch.py	/^    def __init__(self, num_feat, squeeze_factor=16):$/;"	m	class:ChannelAttention
+__init__	pyengine/pysrc/swinir_rcab_arch.py	/^    def __init__(self, num_feat, squeeze_factor=16, res_scale=1):$/;"	m	class:RCAB
+__init__	pyengine/pysrc/swinir_rcab_arch.py	/^    def __init__(self, scale, num_feat):$/;"	m	class:Upsample
+__init__	pyengine/pysrc/swinir_rcab_arch.py	/^    def __init__(self, scale, num_feat, num_out_ch, input_resolution=None):$/;"	m	class:UpsampleOneStep
+__init__	pyengine/pysrc/swinir_rcab_arch.py	/^    def __init__(self,$/;"	m	class:BasicLayer
+__init__	pyengine/pysrc/swinir_rcab_arch.py	/^    def __init__(self,$/;"	m	class:RSTB
+__init__	pyengine/pysrc/swinir_rcab_arch.py	/^    def __init__(self,$/;"	m	class:SwinIR_RCAB
+__init__	pyengine/pysrc/swinir_rcab_arch.py	/^    def __init__(self,$/;"	m	class:SwinTransformerBlock
+__init__	pyengine/pysrc/temp.py	/^    def __init__(self, parent=None):$/;"	m	class:App
+__init__	pyengine/pysrc/vgg.py	/^    def __init__(self, features, num_classes=1000, init_weights=True):$/;"	m	class:VGG
+__version__	mambio/__init__.py	/^__version__ = '0.1.2'$/;"	v
+_get_fid	pyengine/pysrc/misc.py	/^def _get_fid():$/;"	f
+_init_weights	pyengine/pysrc/swin3d_rcab3_arch.py	/^        def _init_weights(m):$/;"	f	member:SwinTransformer3D_RCAB.init_weights	file:
+_init_weights	pyengine/pysrc/swinir_rcab_arch.py	/^    def _init_weights(self, m):$/;"	m	class:SwinIR_RCAB
+_initialize_weights	pyengine/pysrc/vgg.py	/^    def _initialize_weights(self):$/;"	m	class:VGG
+_no_grad_trunc_normal_	pyengine/pysrc/swinir_rcab_arch.py	/^def _no_grad_trunc_normal_(tensor, mean, std, a, b):$/;"	f
+_ntuple	pyengine/pysrc/swinir_rcab_arch.py	/^def _ntuple(n):$/;"	f
+_set_fid	pyengine/pysrc/misc.py	/^def _set_fid(newfid):$/;"	f
+_update	pyengine/pysrc/ptqtgraphTest.py	/^    def _update(self):$/;"	m	class:App
+_update	pyengine/pysrc/temp.py	/^    def _update(self):$/;"	m	class:App
+_vgg	pyengine/pysrc/vgg.py	/^def _vgg(arch, cfg, batch_norm, pretrained, progress, **kwargs):$/;"	f
+a11yProps	src/SettingsMenu.js	/^function a11yProps(index) {$/;"	f
+aboutClose	src/App.js	/^  aboutClose() {$/;"	m	class:App
+aboutOpen	src/App.js	/^      aboutOpen: false,$/;"	p	class:App.constructor.state
+aboutOpen	src/App.js	/^  aboutOpen() {$/;"	m	class:App
+addDir	src/SidePanel.js	/^  addDir() {$/;"	m	class:SidePanel
+allPluginOptions	src/WindowMenu.js	/^let allPluginOptions = [{ name: "ML-SIM" }, { name: "ERNet" }];$/;"	v
+allowMultiplePlugins	src/WindowMenu.js	/^let allowMultiplePlugins = false;$/;"	v
+app	public/EngineCommunication.js	/^const app = electron.app;$/;"	C
+app	public/EngineSetup.js	/^const app = electron.app;$/;"	C
+app	public/electron.js	/^const app = electron.app;$/;"	C
+app	pyengine/pysrc/ptqtgraphTest.py	/^    app = QtGui.QApplication(sys.argv)$/;"	v
+app	pyengine/pysrc/pyqtgraph_astronaut.py	/^app = QtGui.QApplication([])$/;"	v
+app	pyengine/pysrc/temp.py	/^    app = QtGui.QApplication(sys.argv)$/;"	v
+app	src/App.js	/^            version={app.getVersion()}$/;"	M	class:version
+app	src/App.js	/^const app = remote.app;$/;"	C
+app	src/WindowMenu.js	/^const app = remote.app;$/;"	C
+appData	public/EngineSetup.js	/^const appData = app.getPath("appData");$/;"	C
+appData	public/electron.js	/^const appData = app.getPath("appData");$/;"	C
+appHeader	src/App.js	/^    const appHeader = ($/;"	C
+appWidth	src/App.js	/^      appWidth: window.innerWidth,$/;"	p	class:App.constructor.state
+appWidth	src/ImageView.js	/^    this.state = { filepath: "N\/A", appWidth: window.innerWidth };$/;"	p	class:ImageView.constructor.state
+archive	pyengine/util/pyzip.js	/^var archive = archiver("zip", {$/;"	v
+archivefullpath	public/EngineSetup.js	/^let archivefullpath = path.join(enginedir, "engine.mlsim");$/;"	v
+archiver	pyengine/package.json	/^        "archiver": "^4.0.1",$/;"	s	object:devDependencies
+archiver	pyengine/util/pyzip.js	/^var archiver = require("archiver");$/;"	v
+aria	src/ImgsizeSlider.js	/^              aria-labelledby="continuous-slider"$/;"	M	class:ImgsizeSlider
+asyncmodels	pyengine/pysrc/mlsim_misc.py	/^asyncmodels = []$/;"	v
+author	package.json	/^  "author": "Charles N. Christensen",$/;"	s
+author	pyengine/package.json	/^    "author": "Charles N. Christensen",$/;"	s
+aws-sdk	package.json	/^    "aws-sdk": "^2.661.0",$/;"	s	object:dependencies
+ax	test_MicroManager_python_lib/MicroManager_ImageStream.py	/^fig, ax = plt.subplots()$/;"	v
+ax	test_MicroManager_python_lib/SIM_PC_MicroManager_ImageStream.py	/^fig, ax = plt.subplots()$/;"	v
+background	src/Img.js	/^          background:$/;"	p	class:Img.render.styleHover
+background_color	public/manifest.json	/^  "background_color": "#ffffff"$/;"	s
+baseoffset	src/ImgContainer.js	/^      baseoffset: g.baseoffset,$/;"	p	class:ImgContainer.constructor.state
+baseurl	public/EngineSetup.js	/^let baseurl = "https:\/\/ml-sim.s3.eu-west-2.amazonaws.com\/pdist";$/;"	v
+baseurl	src/sess.js	/^    baseurl: "https:\/\/ML-SIM.com",$/;"	p	class:module.exports
+baseurl	util/download_models.js	/^let baseurl = "https:\/\/ml-sim.s3.eu-west-2.amazonaws.com\/pdist";$/;"	v
+begin	src/App.js	/^            Processing of your images can begin.$/;"	M	class:App
+binariseImage	pyengine/pysrc/ernet.py	/^def binariseImage(I):$/;"	f
+blockheight	src/ImgContainer.js	/^      blockheight: g.blockheight,$/;"	p	class:ImgContainer.constructor.state
+body	src/App.css	/^body {$/;"	s
+body	src/index.css	/^body {$/;"	s
+border	src/Img.js	/^          border: "12px solid #e8f0fe",$/;"	p	class:Img.render.style
+border	src/Img.js	/^        border: "1px solid black",$/;"	p	class:Img.render.style
+boxSizing	src/Img.js	/^          boxSizing: "border-box",$/;"	p	class:Img.render.style
+boxSizing	src/Img.js	/^        boxSizing: "border-box",$/;"	p	class:Img.render.style
+browserslist	package.json	/^  "browserslist": {$/;"	o
+build	package.json	/^    "build": "yarn react-build && yarn electron-build",$/;"	s	object:scripts
+build	package.json	/^  "build": {$/;"	o
+build-test	package.json	/^    "build-test": "yarn react-build && yarn electron-build-test",$/;"	s	object:scripts
+build_graph	pyengine/pysrc/ernet.py	/^def build_graph(nodes,edges):$/;"	f
+buttons	public/EngineSetup.js	/^      buttons: ["Relaunch now", "Dismiss"],$/;"	p	class:options
+cachedir	public/EngineCommunication.js	/^  let cachedir = store.get("cachedir");$/;"	v
+cachedir	public/electron.js	/^  cachedir: cachedir,$/;"	p	class:global.settings
+cachedir	public/electron.js	/^let cachedir = store.get("cachedir");$/;"	v
+cachedir	src/SettingsMenu.js	/^                      value={cachedir}$/;"	M	class:value
+cachefolder	pyengine/pysrc/engine.py	/^        cachefolder = sys.argv[3]$/;"	v
+cachefolder	pyengine/pysrc/engine.py	/^    cachefolder = '%s\/Mambio-Library\/tempresize' % appdirs.user_cache_dir('Mambio','Mambio')$/;"	v
+cachefolder	pyengine/pysrc/misc.py	/^cachefolder = None$/;"	v
+calculateGeometry	src/ImgContainer.js	/^function calculateGeometry(filepaths, imgsize) {$/;"	f
+calculate_mask	pyengine/pysrc/swinir_rcab_arch.py	/^    def calculate_mask(self, x_size):$/;"	m	class:SwinTransformerBlock
+can	src/App.js	/^            Processing of your images can begin.$/;"	M	class:App
+cfgs	pyengine/pysrc/vgg.py	/^cfgs = {$/;"	v
+changeColour	pyengine/pysrc/ernet.py	/^def changeColour(I): # change colours (used to match WEKA output, request by Meng)$/;"	f
+charlesnchr-dev	README.md	/^# charlesnchr-dev$/;"	c
+checkFilters	src/FileUtils.js	/^function checkFilters(fn) {$/;"	f
+checkForServerActive	src/ImgContainer.js	/^  checkForServerActive() {$/;"	m	class:ImgContainer
+checkHash	public/EngineSetup.js	/^  var checkHash = (filepath, callback) => {$/;"	v
+checkHash	util/download_models.js	/^var checkHash = (filepath, callback) => {$/;"	v
+checkIfArrayChangedAndUpdateHash	src/FileUtils.js	/^function checkIfArrayChangedAndUpdateHash(inputArray) {$/;"	f
+checkUpdate	public/electron.js	/^  function checkUpdate() {$/;"	f
+check_and_download	util/download_models.js	/^function check_and_download() {$/;"	f
+checked	src/WindowMenu.js	/^  let checked = plugins.includes(plugin.name);$/;"	v
+checkpoint	pyengine/pysrc/swin3d_rcab3_arch.py	/^import torch.utils.checkpoint as checkpoint$/;"	I	nameref:module:torch.utils.checkpoint
+checkpoint	pyengine/pysrc/swinir_rcab_arch.py	/^import torch.utils.checkpoint as checkpoint$/;"	I	nameref:module:torch.utils.checkpoint
+chk_engine	public/EngineSetup.js	/^      let chk_engine = false;$/;"	v
+chk_mdls	public/EngineSetup.js	/^      let chk_mdls = 0;$/;"	v
+className	src/ImgsizeSlider.js	/^          <Grid className="nondraggable" item>$/;"	M	class:ImgsizeSlider
+client	public/EngineCommunication.js	/^  const client = new net.Socket();$/;"	C
+client	public/EngineCommunication.js	/^  var client = new net.Socket();$/;"	v
+client	src/Archive/electron-wait-react.js	/^const client = new net.Socket();$/;"	C
+cloudChk	src/SidePanel.js	/^    const cloudChk = ($/;"	C
+componentDidMount	src/App.js	/^  componentDidMount() {$/;"	m	class:App
+componentDidMount	src/CalcStatus.js	/^    componentDidMount() {$/;"	m	class:CalcStatus
+componentDidMount	src/ImageView.js	/^  componentDidMount() {$/;"	m	class:ImageView
+componentDidMount	src/Img.js	/^    componentDidMount() {$/;"	m	class:Img
+componentDidMount	src/ImgContainer.js	/^  componentDidMount() {$/;"	m	class:ImgContainer
+componentDidMount	src/SidePanel.js	/^  componentDidMount() {$/;"	m	class:PluginComponents
+componentDidMount	src/SidePanel.js	/^  componentDidMount() {$/;"	m	class:SidePanel
+componentDidUpdate	src/App.js	/^  componentDidUpdate() {$/;"	m	class:App
+components	src/SidePanel.js	/^  components(plugins) {$/;"	m	class:PluginComponents
+compute_mask	pyengine/pysrc/swin3d_rcab3_arch.py	/^def compute_mask(D, H, W, window_size, shift_size, device):$/;"	f
+concurrently	package.json	/^    "concurrently": "4.1.2",$/;"	s	object:devDependencies
+config_push_model	public/EngineSetup.js	/^  const config_push_model = (modelname) => {$/;"	C
+constructor	src/App.js	/^  constructor(props) {$/;"	m	class:App
+constructor	src/CalcStatus.js	/^    constructor(props) {$/;"	m	class:CalcStatus
+constructor	src/ImageView.js	/^  constructor(props) {$/;"	m	class:ImageView
+constructor	src/Img.js	/^    constructor(props) {$/;"	m	class:Img
+constructor	src/ImgContainer.js	/^  constructor(props) {$/;"	m	class:ImgContainer
+constructor	src/ImgsizeSlider.js	/^    constructor(props) {$/;"	m	class:ImgsizeSlider
+constructor	src/Plugin_ERNet.js	/^  constructor(props) {$/;"	m	class:Plugin_SIM
+constructor	src/Plugin_SIM.js	/^  constructor(props) {$/;"	m	class:Plugin_SIM
+constructor	src/SidePanel.js	/^  constructor(props) {$/;"	m	class:PluginComponents
+constructor	src/SidePanel.js	/^  constructor(props) {$/;"	m	class:SidePanel
+container	src/Plugin_SIM.js	/^            container$/;"	M	class:Plugin_SIM
+control	src/Plugin_SIM.js	/^                  control={$/;"	M	class:Plugin_SIM
+conv	pyengine/pysrc/ernet.py	/^def conv(in_channels, out_channels, kernel_size, bias=True):$/;"	f
+conv	pyengine/pysrc/mlsim_models.py	/^def conv(in_channels, out_channels, kernel_size, bias=True):$/;"	f
+count	pyengine/pysrc/mlsim_misc.py	/^count = -1$/;"	v
+createPyProc	public/EngineCommunication.js	/^const createPyProc = (use_pysrc, script) => {$/;"	C
+createWindow	public/electron.js	/^function createWindow() {$/;"	f
+cross-env	package.json	/^    "cross-env": "^7.0.2",$/;"	s	object:devDependencies
+cross-env	pyengine/package.json	/^        "cross-env": "^7.0.2"$/;"	s	object:devDependencies
+crypto	package.json	/^    "crypto": "^1.0.1",$/;"	s	object:dependencies
+crypto	public/EngineSetup.js	/^const crypto = require("crypto");$/;"	C
+crypto	public/electron.js	/^const crypto = require("crypto");$/;"	C
+crypto	pyengine/util/pyfinalize.js	/^var crypto = require("crypto");$/;"	v
+crypto	src/FileUtils.js	/^var crypto = window.require("crypto");$/;"	v
+crypto	util/download_models.js	/^const crypto = require("crypto");$/;"	C
+darktheme	src/ImgsizeSlider.js	/^const darktheme = createMuiTheme({$/;"	C
+data	pyengine/util/pyfinalize.js	/^let data = { version: version }$/;"	c
+decodeImage	pyengine/pysrc/mlsim_misc.py	/^def decodeImage(imgData,w,h,bytesPerPixel,numComponents):$/;"	f
+defaultId	public/EngineSetup.js	/^      defaultId: 0,$/;"	p	class:options
+defaultValue	src/ImgsizeSlider.js	/^                      defaultValue="filename"$/;"	M	class:ImgsizeSlider
+degree_histogram	pyengine/pysrc/ernet.py	/^def degree_histogram(savepath,G,colour='blue'):$/;"	f
+dependencies	package.json	/^  "dependencies": {$/;"	o
+description	package.json	/^  "description": "Deep neural network for reconstruction of structured illumination microscopy i/;"	s
+description	pyengine/package.json	/^    "description": "Python backend engine used in ML-SIM",$/;"	s
+desktop_fingerprint	public/electron.js	/^let desktop_fingerprint = "-1";$/;"	v
+desktop_fingerprint	src/App.js	/^      desktop_fingerprint: sess.desktop_fingerprint,$/;"	p	class:App.constructor.state
+desktop_fingerprint	src/sess.js	/^    desktop_fingerprint : "-1",$/;"	p	class:module.exports
+detail	public/EngineSetup.js	/^      detail:$/;"	p	class:options
+devDependencies	package.json	/^  "devDependencies": {$/;"	o
+devDependencies	pyengine/package.json	/^    "devDependencies": {$/;"	o
+devTools	public/electron.js	/^    devTools: false,$/;"	p	class:createWindow.webPreferences
+development	package.json	/^    "development": [$/;"	a	object:browserslist
+device	pyengine/pysrc/mlsim_misc.py	/^device = []$/;"	v
+dim	src/Img.js	/^        dim: dim,$/;"	p	class:Img.constructor.state
+direction	src/Plugin_SIM.js	/^            direction="column"$/;"	M	class:Plugin_SIM
+dirsizes	src/sess.js	/^    dirsizes : null,$/;"	p	class:module.exports
+disabled	src/ImgsizeSlider.js	/^              disabled={!this.state.showSelect}$/;"	M	class:ImgsizeSlider
+display	public/manifest.json	/^  "display": "standalone",$/;"	s
+displayedFolders	src/App.js	/^      displayedFolders: displayedFolders,$/;"	p	class:App.constructor.state
+displayedFolders	src/sess.js	/^    displayedFolders : null,$/;"	p	class:module.exports
+displayedFolders_set	src/App.js	/^  displayedFolders_set(displayedFolders) {$/;"	m	class:App
+divHover	src/Img.js	/^          {divHover}$/;"	M	class:Img
+download	public/EngineSetup.js	/^  function download(url, dest, post_func) {$/;"	f
+download	util/download_models.js	/^function download(url, dest, post_func) {$/;"	f
+download-models	package.json	/^    "download-models": "node util\/download_models.js",$/;"	s	object:scripts
+download_checkHash_extract	public/EngineSetup.js	/^  var download_checkHash_extract = (url, dest) => {$/;"	v
+download_mdls	util/download_models.js	/^function download_mdls() {$/;"	f
+downloads_in_progress	public/EngineSetup.js	/^let downloads_in_progress = 0;$/;"	v
+downloads_in_progress	util/download_models.js	/^let downloads_in_progress = 0;$/;"	v
+drop_path	pyengine/pysrc/swinir_rcab_arch.py	/^def drop_path(x, drop_prob: float = 0., training: bool = False):$/;"	f
+electron	package.json	/^    "electron": "6.0.11",$/;"	s	object:devDependencies
+electron	package.json	/^    "electron": "cross-env RunReactCompile=1 electron .",$/;"	s	object:scripts
+electron	public/EngineCommunication.js	/^const electron = require("electron");$/;"	C
+electron	public/EngineSetup.js	/^const electron = require("electron");$/;"	C
+electron	public/electron.js	/^const electron = require("electron");$/;"	C
+electron-build	package.json	/^    "electron-build": "cross-env electron-builder",$/;"	s	object:scripts
+electron-build-publish	package.json	/^    "electron-build-publish": "cross-env electron-builder --publish=always",$/;"	s	object:scripts
+electron-build-publish-github	package.json	/^    "electron-build-publish-github": "cross-env electron-builder --config.publish.provider=githu/;"	s	object:scripts
+electron-build-test	package.json	/^    "electron-build-test": "cross-env electron-builder --config.compression=store --config.publi/;"	s	object:scripts
+electron-builder	package.json	/^    "electron-builder": "22.3.6",$/;"	s	object:devDependencies
+electron-is-dev	package.json	/^    "electron-is-dev": "1.1.0",$/;"	s	object:dependencies
+electron-localhost	package.json	/^    "electron-localhost": "wait-on http:\/\/localhost:4001 && electron .",$/;"	s	object:scripts
+electron-log	package.json	/^    "electron-log": "^4.1.1",$/;"	s	object:dependencies
+electron-store	package.json	/^    "electron-store": "^5.1.0",$/;"	s	object:dependencies
+electron-updater	package.json	/^    "electron-updater": "^4.0.6",$/;"	s	object:dependencies
+engineCommunication	public/EngineSetup.js	/^const engineCommunication = require(".\/EngineCommunication.js");$/;"	C
+engineCommunication	public/electron.js	/^const engineCommunication = require(".\/EngineCommunication.js");$/;"	C
+engineSetup	public/electron.js	/^const engineSetup = require(".\/EngineSetup.js");$/;"	C
+engineStatus	src/App.js	/^      engineStatus: "unstarted",$/;"	p	class:App.constructor.state
+engineStatus	src/App.js	/^  engineStatus() {$/;"	m	class:App
+engine_dir	pyengine/util/pyfinalize.js	/^let engine_dir = "."$/;"	v
+engine_hash	public/EngineSetup.js	/^      let engine_hash = store.get("engine_hash");$/;"	v
+engine_models	public/EngineSetup.js	/^      let engine_models = store.get("engine_models");$/;"	v
+engine_models	public/EngineSetup.js	/^    let engine_models = store.get("engine_models");$/;"	v
+engine_zip	pyengine/util/pyfinalize.js	/^let engine_zip = 'engine.mlsim'$/;"	v
+enginebin	public/EngineSetup.js	/^let enginebin = "engine.exe"; \/\/! Windows specific$/;"	v
+enginedir	public/EngineSetup.js	/^let enginedir = path.join(appData, "ML-SIM-Engine");$/;"	v
+excludePattern	src/sess.js	/^    excludePattern : "",$/;"	p	class:module.exports
+exit	pyengine/pysrc/engine.py	/^    def exit():$/;"	f	function:run_command	file:
+exitEngine	public/EngineCommunication.js	/^const exitEngine = () => {$/;"	C
+exportdir	public/electron.js	/^  exportdir: exportdir,$/;"	p	class:global.settings
+exportdir	public/electron.js	/^let exportdir = store.get("exportdir");$/;"	v
+exportdir	src/SettingsMenu.js	/^                      value={exportdir}$/;"	M	class:value
+exports	src/sess.js	/^module.exports = {$/;"	c	class:module
+extra_repr	pyengine/pysrc/swinir_rcab_arch.py	/^    def extra_repr(self) -> str:$/;"	m	class:BasicLayer	typeref:typename:str
+extra_repr	pyengine/pysrc/swinir_rcab_arch.py	/^    def extra_repr(self) -> str:$/;"	m	class:PatchMerging	typeref:typename:str
+extra_repr	pyengine/pysrc/swinir_rcab_arch.py	/^    def extra_repr(self) -> str:$/;"	m	class:SwinTransformerBlock	typeref:typename:str
+extra_repr	pyengine/pysrc/swinir_rcab_arch.py	/^    def extra_repr(self) -> str:$/;"	m	class:WindowAttention	typeref:typename:str
+extract	public/EngineSetup.js	/^  var extract = (hashval) => {$/;"	v
+extraction_in_progress	public/EngineSetup.js	/^let extraction_in_progress = false;$/;"	v
+fd	public/EngineSetup.js	/^    var fd = fs.createReadStream(filepath);$/;"	v
+fd	pyengine/util/pyfinalize.js	/^  var fd = fs.createReadStream(filename);$/;"	v
+fd	util/download_models.js	/^  var fd = fs.createReadStream(filepath);$/;"	v
+features	pyengine/pysrc/mlsim_misc.py	/^features = []$/;"	v
+fid	pyengine/pysrc/misc.py	/^fid = open('socketserver.log', 'a+')$/;"	v
+fig	test_MicroManager_python_lib/MicroManager_ImageStream.py	/^fig, ax = plt.subplots()$/;"	v
+fig	test_MicroManager_python_lib/SIM_PC_MicroManager_ImageStream.py	/^fig, ax = plt.subplots()$/;"	v
+file_submenu	src/WindowMenu.js	/^  let file_submenu = [];$/;"	v
+filepath	src/ImageView.js	/^    this.state = { filepath: "N\/A", appWidth: window.innerWidth };$/;"	p	class:ImageView.constructor.state
+filepath	src/Img.js	/^        filepath: props.filepath,$/;"	p	class:Img.constructor.state
+filepaths	public/EngineCommunication.js	/^var filepaths = [];$/;"	v
+filepaths	src/ImgContainer.js	/^      filepaths: []$/;"	p	class:ImgContainer.constructor.state
+filepaths	src/ImgContainer.js	/^    let filepaths,$/;"	v
+filepaths	src/sess.js	/^    filepaths : null,$/;"	p	class:module.exports
+filepaths_hash	src/sess.js	/^    filepaths_hash : "",$/;"	p	class:module.exports
+files	pyengine/pysrc/mlsim_misc.py	/^files = []$/;"	v
+flops	pyengine/pysrc/swinir_rcab_arch.py	/^    def flops(self):$/;"	m	class:BasicLayer
+flops	pyengine/pysrc/swinir_rcab_arch.py	/^    def flops(self):$/;"	m	class:PatchEmbed
+flops	pyengine/pysrc/swinir_rcab_arch.py	/^    def flops(self):$/;"	m	class:PatchMerging
+flops	pyengine/pysrc/swinir_rcab_arch.py	/^    def flops(self):$/;"	m	class:PatchUnEmbed
+flops	pyengine/pysrc/swinir_rcab_arch.py	/^    def flops(self):$/;"	m	class:RSTB
+flops	pyengine/pysrc/swinir_rcab_arch.py	/^    def flops(self):$/;"	m	class:SwinIR_RCAB
+flops	pyengine/pysrc/swinir_rcab_arch.py	/^    def flops(self):$/;"	m	class:SwinTransformerBlock
+flops	pyengine/pysrc/swinir_rcab_arch.py	/^    def flops(self):$/;"	m	class:UpsampleOneStep
+flops	pyengine/pysrc/swinir_rcab_arch.py	/^    def flops(self, n):$/;"	m	class:WindowAttention
+folderEntries	src/SidePanel.js	/^    let folderEntries;$/;"	v
+folderEntry	src/SidePanel.js	/^      folderEntry: props.folderEntry,$/;"	p	class:SidePanel.constructor.state
+folderEntry	src/SidePanel.js	/^  folderEntry(key, dirpath, dirsize) {$/;"	m	class:SidePanel
+folderEntry 	src/SidePanel.js	/^          "folderEntry " +$/;"	M	class:SidePanel.folderEntry.className
+format	.minio.sys/format.json	/^{"version":"1","format":"fs","id":"86af2569-2c46-4449-b9d2-9561646a2e7e","fs":{"version":"2"}}/;"	s
+forward	pyengine/pysrc/ernet.py	/^    def forward(self, x):$/;"	m	class:CALayer
+forward	pyengine/pysrc/ernet.py	/^    def forward(self, x):$/;"	m	class:RCAB
+forward	pyengine/pysrc/ernet.py	/^    def forward(self, x):$/;"	m	class:RCAN
+forward	pyengine/pysrc/ernet.py	/^    def forward(self, x):$/;"	m	class:ResidualGroup
+forward	pyengine/pysrc/mlsim_models.py	/^    def forward(self, x):$/;"	m	class:CALayer
+forward	pyengine/pysrc/mlsim_models.py	/^    def forward(self, x):$/;"	m	class:EDSR
+forward	pyengine/pysrc/mlsim_models.py	/^    def forward(self, x):$/;"	m	class:RCAB
+forward	pyengine/pysrc/mlsim_models.py	/^    def forward(self, x):$/;"	m	class:RCAN
+forward	pyengine/pysrc/mlsim_models.py	/^    def forward(self, x):$/;"	m	class:ResBlock
+forward	pyengine/pysrc/mlsim_models.py	/^    def forward(self, x):$/;"	m	class:ResidualGroup
+forward	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def forward(self, x):$/;"	m	class:BasicLayer
+forward	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def forward(self, x):$/;"	m	class:ChannelAttention
+forward	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def forward(self, x):$/;"	m	class:Mlp
+forward	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def forward(self, x):$/;"	m	class:PatchEmbed3D
+forward	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def forward(self, x):$/;"	m	class:PatchMerging
+forward	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def forward(self, x):$/;"	m	class:PatchUnEmbed3D
+forward	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def forward(self, x):$/;"	m	class:RCAB
+forward	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def forward(self, x):$/;"	m	class:RSTB3D
+forward	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def forward(self, x):$/;"	m	class:ResidualGroup
+forward	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def forward(self, x):$/;"	m	class:SwinTransformer3D_RCAB
+forward	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def forward(self, x):$/;"	m	class:Upsampler
+forward	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def forward(self, x, mask=None):$/;"	m	class:WindowAttention3D
+forward	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def forward(self, x, mask_matrix):$/;"	m	class:SwinTransformerBlock3D
+forward	pyengine/pysrc/swinir_rcab_arch.py	/^    def forward(self, x):$/;"	m	class:ChannelAttention
+forward	pyengine/pysrc/swinir_rcab_arch.py	/^    def forward(self, x):$/;"	m	class:DropPath
+forward	pyengine/pysrc/swinir_rcab_arch.py	/^    def forward(self, x):$/;"	m	class:Mlp
+forward	pyengine/pysrc/swinir_rcab_arch.py	/^    def forward(self, x):$/;"	m	class:PatchEmbed
+forward	pyengine/pysrc/swinir_rcab_arch.py	/^    def forward(self, x):$/;"	m	class:PatchMerging
+forward	pyengine/pysrc/swinir_rcab_arch.py	/^    def forward(self, x):$/;"	m	class:RCAB
+forward	pyengine/pysrc/swinir_rcab_arch.py	/^    def forward(self, x):$/;"	m	class:ResidualGroup
+forward	pyengine/pysrc/swinir_rcab_arch.py	/^    def forward(self, x):$/;"	m	class:SwinIR_RCAB
+forward	pyengine/pysrc/swinir_rcab_arch.py	/^    def forward(self, x, mask=None):$/;"	m	class:WindowAttention
+forward	pyengine/pysrc/swinir_rcab_arch.py	/^    def forward(self, x, x_size):$/;"	m	class:BasicLayer
+forward	pyengine/pysrc/swinir_rcab_arch.py	/^    def forward(self, x, x_size):$/;"	m	class:PatchUnEmbed
+forward	pyengine/pysrc/swinir_rcab_arch.py	/^    def forward(self, x, x_size):$/;"	m	class:RSTB
+forward	pyengine/pysrc/swinir_rcab_arch.py	/^    def forward(self, x, x_size):$/;"	m	class:SwinTransformerBlock
+forward	pyengine/pysrc/vgg.py	/^    def forward(self, x):$/;"	m	class:VGG
+forward_features	pyengine/pysrc/swinir_rcab_arch.py	/^    def forward_features(self, x):$/;"	m	class:SwinIR_RCAB
+forward_part1	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def forward_part1(self, x, mask_matrix):$/;"	m	class:SwinTransformerBlock3D
+forward_part2	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def forward_part2(self, x):$/;"	m	class:SwinTransformerBlock3D
+fp	src/Img.js	/^          key={fp + "-div"}$/;"	M	class:Img.render.key
+fps	test_MicroManager_python_lib/MicroManager_ImageStream.py	/^    fps = 'FPS: %0.1f' % fpsval$/;"	v
+fps	test_MicroManager_python_lib/SIM_PC_MicroManager_ImageStream.py	/^    fps = 'FPS: %0.1f' % fpsval$/;"	v
+fpsval	test_MicroManager_python_lib/MicroManager_ImageStream.py	/^    fpsval = 1 \/ (time.clock() - t0)$/;"	v
+fpsval	test_MicroManager_python_lib/SIM_PC_MicroManager_ImageStream.py	/^    fpsval = 1 \/ (time.clock() - t0)$/;"	v
+fpsval	test_MicroManager_python_lib/SIM_PC_pcotest.py	/^        fpsval = 1 \/ (time.perf_counter() - t0)$/;"	v
+fs	.minio.sys/format.json	/^{"version":"1","format":"fs","id":"86af2569-2c46-4449-b9d2-9561646a2e7e","fs":{"version":"2"}}/;"	o
+fs	public/EngineSetup.js	/^const fs = require("fs");$/;"	C
+fs	pyengine/util/pyfinalize.js	/^var fs = require("fs");$/;"	v
+fs	pyengine/util/pyzip.js	/^var fs = require("fs");$/;"	v
+fs	src/FileUtils.js	/^var fs = window.require("fs");$/;"	v
+fs	util/download_models.js	/^const fs = require("fs");$/;"	C
+getGraph	pyengine/pysrc/ernet.py	/^def getGraph(img,basename):$/;"	f
+getHash	pyengine/util/pyfinalize.js	/^const getHash = (filename, callback) => {$/;"	C
+getHashOfArray	src/FileUtils.js	/^function getHashOfArray(inputArray) {$/;"	f
+getPluginSubmenu	src/WindowMenu.js	/^let getPluginSubmenu = (checkedPlugins) => {$/;"	v
+getResult	pyengine/pysrc/mlsim_misc.py	/^    def getResult(self, opt, img):$/;"	m	class:AsyncModel
+getThumb	src/Img.js	/^    getThumb(filepath) {$/;"	m	class:Img
+get_latest_json	public/EngineSetup.js	/^const get_latest_json = async () => {$/;"	C
+get_latest_json	util/download_models.js	/^const get_latest_json = async () => {$/;"	C
+get_pdist_version	src/AboutMenu.js	/^      onEnter={get_pdist_version}$/;"	M	class:AboutMenu.onEnter
+get_serverActive	public/EngineCommunication.js	/^const get_serverActive = () => {$/;"	C
+get_window_size	pyengine/pysrc/swin3d_rcab3_arch.py	/^def get_window_size(x_size, window_size, shift_size=None):$/;"	f
+got	package.json	/^    "got": "^11.0.2",$/;"	s	object:dependencies
+got	public/EngineSetup.js	/^const got = require("got");$/;"	C
+got	util/download_models.js	/^const got = require("got");$/;"	C
+graphMetrics	src/Plugin_ERNet.js	/^      graphMetrics: true,$/;"	p	class:Plugin_SIM.constructor.state
+graph_image	pyengine/pysrc/ernet.py	/^def graph_image(savepath,G):$/;"	f
+grid	src/Plugin_ERNet.js	/^            key={"grid"}$/;"	M	class:key
+gridItemStyle	src/SettingsMenu.js	/^  const gridItemStyle = { minHeight: 250 };$/;"	c	class:TabPanel
+gridheight	src/App.js	/^      gridheight: 500,$/;"	p	class:App.constructor.state
+gridheight	src/ImgContainer.js	/^      gridheight: 0,$/;"	p	class:ImgContainer.constructor.state
+gridheight_set	src/App.js	/^  gridheight_set(gridheight) {$/;"	m	class:App
+gridheight_set	src/ImgContainer.js	/^      gridheight_set: props.gridheight_set,$/;"	p	class:ImgContainer.constructor.state
+handleChange	src/SettingsMenu.js	/^                onChange={handleChange}$/;"	M	class:onChange
+handleClose	src/AboutMenu.js	/^      onClose={handleClose}$/;"	M	class:AboutMenu.onClose
+handleClose	src/SettingsMenu.js	/^      onClose={handleClose}$/;"	M	class:TabPanel.onClose
+handleSelect	src/ImgsizeSlider.js	/^    handleSelect(e) {$/;"	m	class:ImgsizeSlider
+handle_microManagerPluginState	pyengine/pysrc/mlsim_misc.py	/^def handle_microManagerPluginState(desiredState, port):$/;"	f
+handler	public/electron.js	/^  handler: null,$/;"	p	class:global.settings
+handler	src/ImgsizeSlider.js	/^        handler: props.handler,$/;"	p	class:ImgsizeSlider.constructor.state
+hash	public/EngineSetup.js	/^    var hash = crypto.createHash("sha1");$/;"	v
+hash	pyengine/util/pyfinalize.js	/^  var hash = crypto.createHash("sha1");$/;"	v
+hash	util/download_models.js	/^  var hash = crypto.createHash("sha1");$/;"	v
+headerHeight	src/sess.js	/^    headerHeight : 70,$/;"	p	class:module.exports
+height	pyengine/pysrc/swinir_rcab_arch.py	/^    height = (1024 \/\/ upscale \/\/ window_size + 1) * window_size$/;"	v
+height	src/App.js	/^      height: null,$/;"	p	class:App.constructor.state
+height	src/Img.js	/^          height: 50,$/;"	p	class:Img.render.styleHover
+height	src/sess.js	/^    height : window.innerHeight,$/;"	p	class:module.exports
+hello	mambio/__init__.py	/^hello = 'hej'$/;"	v
+hideBackdrop	src/App.js	/^  hideBackdrop() {$/;"	m	class:App
+homepage	package.json	/^  "homepage": ".\/",$/;"	s
+hoverBool	src/Img.js	/^        hoverBool: false,$/;"	p	class:Img.constructor.state
+html	src/App.css	/^html {$/;"	s
+icon	package.json	/^      "icon": "dist\/icons"$/;"	s	object:build.linux
+icon	package.json	/^      "icon": "graphics\/icons\/icon.icns"$/;"	s	object:build.mac
+icon	package.json	/^      "icon": "graphics\/icons\/icon.ico",$/;"	s	object:build.win
+icons	public/manifest.json	/^  "icons": [$/;"	a
+id	.minio.sys/format.json	/^{"version":"1","format":"fs","id":"86af2569-2c46-4449-b9d2-9561646a2e7e","fs":{"version":"2"}}/;"	s
+id	src/ImgContainer.js	/^        id="imgcontainer"$/;"	M	class:ImgContainer
+idx	pyengine/pysrc/engine.py	/^            idx = int(idx)$/;"	v
+idx	pyengine/pysrc/engine.py	/^        idx = int(idx)$/;"	v
+idx	pyengine/pysrc/engine.py	/^    idx = cachefolder.split('\/Mambio\/')[-1]$/;"	v
+imageHoverOut	src/Img.js	/^    imageHoverOut(filepath, e) {$/;"	m	class:Img
+imageHoverOver	src/Img.js	/^    imageHoverOver(filepath, e) {$/;"	m	class:Img
+images	src/App.js	/^            Processing of your images can begin.$/;"	M	class:App
+images	test_MicroManager_python_lib/SIM_PC_pcotest.py	/^        images, meta = cam.images()$/;"	v
+img	pyengine/pysrc/pyqtgraph_astronaut.py	/^img = data.astronaut()$/;"	v
+img	test_MicroManager_python_lib/MicroManager_ImageStream.py	/^    img = mmc.getImage()$/;"	v
+img	test_MicroManager_python_lib/SIM_PC_MicroManager_ImageStream.py	/^    img = mmc.getImage()$/;"	v
+imgGrid	src/ImgContainer.js	/^  imgGrid(filepaths, startidx, Nblock, offset) {$/;"	m	class:ImgContainer
+imgitem	pyengine/pysrc/pyqtgraph_astronaut.py	/^imgitem = pg.ImageItem(axisOrder='row-major')$/;"	v
+imgs	src/ImgContainer.js	/^      imgs = <div><\/div>;$/;"	v
+imgsize	src/App.js	/^      imgsize: sess.imgsize,$/;"	p	class:App.constructor.state
+imgsize	src/ImgsizeSlider.js	/^        imgsize: props.imgsize,$/;"	p	class:ImgsizeSlider.constructor.state
+imgsize	src/sess.js	/^    imgsize : 250, \/\/ default width$/;"	p	class:module.exports
+imgsizeHandler	src/App.js	/^  imgsizeHandler(value) {$/;"	m	class:App
+imgsizeRerender	src/ImgContainer.js	/^  imgsizeRerender() {$/;"	m	class:ImgContainer
+imgsizeSlider	src/ImgsizeSlider.js	/^    imgsizeSlider(event, value) {$/;"	m	class:ImgsizeSlider
+imgsrc	src/Img.js	/^        imgsrc: imgsrc,$/;"	p	class:Img.constructor.state
+includePattern	src/sess.js	/^    includePattern : "",$/;"	p	class:module.exports
+initEngine	public/EngineSetup.js	/^      initEngine$/;"	M	class:module.exports
+initEngine	public/EngineSetup.js	/^  const initEngine = async () => {$/;"	C
+init_weights	pyengine/pysrc/swin3d_rcab3_arch.py	/^    def init_weights(self, pretrained=None):$/;"	m	class:SwinTransformer3D_RCAB
+initdir	test_MicroManager_python_lib/MicroManager_ImageStream.py	/^initdir = os.getcwd()$/;"	v
+initdir	test_MicroManager_python_lib/SIM_PC_MicroManager_ImageStream.py	/^initdir = os.getcwd()$/;"	v
+isCalcFeaturesFinished	src/CalcStatus.js	/^    isCalcFeaturesFinished() {$/;"	m	class:CalcStatus
+isCalcFeaturesFinished	src/sess.js	/^    isCalcFeaturesFinished : null,$/;"	p	class:module.exports
+isDev	public/EngineSetup.js	/^const isDev = require("electron-is-dev");$/;"	C
+isDev	public/electron.js	/^const isDev = require("electron-is-dev");$/;"	C
+isDev	src/App.js	/^const isDev = window.require("electron-is-dev");$/;"	C
+isDev	src/WindowMenu.js	/^const isDev = window.require("electron-is-dev");$/;"	C
+item	src/Plugin_SIM.js	/^            <Grid item>$/;"	M	class:Plugin_SIM
+item	src/SidePanel.js	/^              item$/;"	M	class:SidePanel
+item	src/SidePanel.js	/^        <Grid item style={{ width: "80%" }}>$/;"	M	class:SidePanel
+justify	src/Plugin_SIM.js	/^            justify="flex-start"$/;"	M	class:Plugin_SIM
+key	src/ImgContainer.js	/^        key={$/;"	M	class:ImgContainer
+key	src/Plugin_SIM.js	/^            key={"grid"}$/;"	M	class:Plugin_SIM
+key	src/SidePanel.js	/^        key={key}$/;"	M	class:SidePanel.folderEntry.container
+label	src/Plugin_SIM.js	/^                  label="μManager integration"$/;"	M	class:Plugin_SIM
+labelPlacement	src/Plugin_SIM.js	/^                  labelPlacement="top"$/;"	M	class:Plugin_SIM
+labelitem	pyengine/pysrc/pyqtgraph_astronaut.py	/^labelitem = pg.LabelItem()$/;"	v
+labelledby	src/ImgsizeSlider.js	/^              aria-labelledby="continuous-slider"$/;"	M	class:ImgsizeSlider
+license	package.json	/^  "license": "MIT",$/;"	s
+license	pyengine/package.json	/^    "license": "UNLICENSED",$/;"	s
+linux	package.json	/^    "linux": {$/;"	o	object:build
+log	public/EngineCommunication.js	/^const log = require("electron-log");$/;"	C
+log	public/EngineSetup.js	/^const log = require("electron-log");$/;"	C
+log	public/electron.js	/^const log = require("electron-log");$/;"	C
+log	pyengine/pysrc/misc.py	/^def log(text):$/;"	f
+log	src/App.js	/^const log = window.require("electron-log");$/;"	C
+log	src/AppUpdate.js	/^const log = window.require("electron-log");$/;"	C
+log	src/CalcStatus.js	/^const log = window.require("electron-log");$/;"	C
+log	src/FileUtils.js	/^const log = window.require("electron-log");$/;"	C
+log	src/ImageView.js	/^const log = window.require("electron-log");$/;"	C
+log	src/Img.js	/^const log = window.require("electron-log");$/;"	C
+log	src/ImgContainer.js	/^const log = window.require("electron-log");$/;"	C
+log	src/ImgsizeSlider.js	/^const log = window.require("electron-log");$/;"	C
+log	src/Plugin_ERNet.js	/^const log = window.require("electron-log");$/;"	C
+log	src/Plugin_SIM.js	/^const log = window.require("electron-log");$/;"	C
+log	src/SidePanel.js	/^const log = window.require("electron-log");$/;"	C
+log	src/WindowMenu.js	/^const log = window.require("electron-log");$/;"	C
+loggedIn_set	src/App.js	/^  loggedIn_set(loggedIn, firstname, lastname, emailaddr, token) {$/;"	m	class:App
+logout	src/App.js	/^  logout() {$/;"	m	class:App
+mac	package.json	/^    "mac": {$/;"	o	object:build
+main	package.json	/^  "main": "public\/electron.js",$/;"	s
+mainWindow	public/electron.js	/^let mainWindow;$/;"	v
+make_layer	pyengine/pysrc/swin3d_rcab3_arch.py	/^def make_layer(basic_block, num_basic_block, **kwarg):$/;"	f
+make_layer	pyengine/pysrc/swinir_rcab_arch.py	/^def make_layer(basic_block, num_basic_block, **kwarg):$/;"	f
+make_layers	pyengine/pysrc/vgg.py	/^def make_layers(cfg, batch_norm=False):$/;"	f
+margin	src/Img.js	/^          margin: 0,$/;"	p	class:Img.render.styleHover
+max	src/ImgsizeSlider.js	/^              max={500}$/;"	M	class:ImgsizeSlider
+mbps	util/download_models.js	/^let mbps = "N\/A";$/;"	v
+md5file	pyengine/pysrc/misc.py	/^def md5file(filename):$/;"	f
+mdls	public/EngineSetup.js	/^      let mdls = pdist_json.models;$/;"	v
+menu	src/WindowMenu.js	/^  const menu = Menu.buildFromTemplate(template);$/;"	C
+message	public/EngineSetup.js	/^      message:$/;"	p	class:options
+meta	test_MicroManager_python_lib/SIM_PC_pcotest.py	/^        images, meta = cam.images()$/;"	v
+microManagerPluginState	pyengine/pysrc/mlsim_misc.py	/^microManagerPluginState = False$/;"	v
+min	src/ImgsizeSlider.js	/^              min={200}$/;"	M	class:ImgsizeSlider
+minHeight	src/SettingsMenu.js	/^  const gridItemStyle = { minHeight: 250 };$/;"	p	class:TabPanel.gridItemStyle
+mlsim	pyengine/pysrc/engine.py	/^import mlsim_misc as mlsim$/;"	I	nameref:module:mlsim_misc
+mmc	test_MicroManager_python_lib/MicroManager_ImageStream.py	/^mmc = MMCorePy.CMMCore()  # Instance micromanager core$/;"	v
+mmc	test_MicroManager_python_lib/SIM_PC_MicroManager_ImageStream.py	/^mmc = MMCorePy.CMMCore()  # Instance micromanager core$/;"	v
+model	pyengine/pysrc/mlsim_misc.py	/^model = None$/;"	v
+model	pyengine/pysrc/swinir_rcab_arch.py	/^    model = SwinIR($/;"	v
+model_exists	public/EngineSetup.js	/^      let model_exists = false;$/;"	v
+model_urls	pyengine/pysrc/vgg.py	/^model_urls = {$/;"	v
+modeldir	public/EngineSetup.js	/^var modeldir = path.join(enginedir, "models");$/;"	v
+modeldir	util/download_models.js	/^var modeldir = path.join("pyengine", "models");$/;"	v
+mytheme	src/Plugin_ERNet.js	/^              <ThemeProvider theme={mytheme}>$/;"	M	class:Perform
+mytheme	src/Plugin_ERNet.js	/^const mytheme = createMuiTheme({$/;"	C
+mytheme	src/Plugin_SIM.js	/^const mytheme = createMuiTheme({$/;"	C
+mytheme	src/SidePanel.js	/^const mytheme = createMuiTheme({$/;"	C
+name	package.json	/^  "name": "ML-SIM",$/;"	s
+name	public/manifest.json	/^  "name": "Create React App Sample",$/;"	s
+name	pyengine/package.json	/^    "name": "ml-engine",$/;"	s
+nbsp	src/ImgsizeSlider.js	/^            &nbsp;&nbsp;&nbsp;$/;"	M	class:ImgsizeSlider
+nbsp	src/Plugin_SIM.js	/^                &nbsp; Run ML-SIM$/;"	M	class:Plugin_SIM
+net	public/EngineCommunication.js	/^var net = require("net");$/;"	v
+net	src/Archive/electron-wait-react.js	/^const net = require('net');$/;"	C
+nn	pyengine/pysrc/ernet.py	/^import torch.nn as nn$/;"	I	nameref:module:torch.nn
+nn	pyengine/pysrc/mlsim_misc.py	/^import torch.nn as nn$/;"	I	nameref:module:torch.nn
+nn	pyengine/pysrc/mlsim_models.py	/^import torch.nn as nn$/;"	I	nameref:module:torch.nn
+nn	pyengine/pysrc/swin3d_rcab3_arch.py	/^import torch.nn as nn$/;"	I	nameref:module:torch.nn
+nn	pyengine/pysrc/swinir_rcab_arch.py	/^import torch.nn as nn$/;"	I	nameref:module:torch.nn
+nn	pyengine/pysrc/vgg.py	/^import torch.nn as nn$/;"	I	nameref:module:torch.nn
+no_weight_decay	pyengine/pysrc/swinir_rcab_arch.py	/^    def no_weight_decay(self):$/;"	m	class:SwinIR_RCAB
+no_weight_decay_keywords	pyengine/pysrc/swinir_rcab_arch.py	/^    def no_weight_decay_keywords(self):$/;"	m	class:SwinIR_RCAB
+nodeIntegration	public/electron.js	/^    nodeIntegration: true,$/;"	p	class:createWindow.webPreferences
+nodemon	package.json	/^    "nodemon": "^2.0.3",$/;"	s	object:devDependencies
+norm_cdf	pyengine/pysrc/swinir_rcab_arch.py	/^    def norm_cdf(x):$/;"	f	function:_no_grad_trunc_normal_	file:
+np	pyengine/pysrc/ernet.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pyengine/pysrc/misc.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pyengine/pysrc/mlsim_lib.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pyengine/pysrc/mlsim_misc.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pyengine/pysrc/ptqtgraphTest.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pyengine/pysrc/pyqtgraph_astronaut.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pyengine/pysrc/swin3d_rcab3_arch.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pyengine/pysrc/temp.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pyengine/pysrc/time_benchmark_mlsim.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	test_MicroManager_python_lib/SIM_PC_MicroManager_ImageStream.py	/^import numpy as np$/;"	I	nameref:module:numpy
+num_models	pyengine/pysrc/mlsim_misc.py	/^num_models = 5$/;"	v
+nx	pyengine/pysrc/ernet.py	/^import networkx as nx$/;"	I	nameref:module:networkx
+of	src/App.js	/^            Processing of your images can begin.$/;"	M	class:App
+oldfolder	pyengine/pysrc/engine.py	/^        oldfolder = cachefolder.replace($/;"	v
+onChange	src/ImgsizeSlider.js	/^                      onChange={this.handleSelect.bind(this)}$/;"	M	class:ImgsizeSlider
+onChange	src/ImgsizeSlider.js	/^              onChange={this.imgsizeSlider.bind(this)}$/;"	M	class:ImgsizeSlider
+onClick	src/Plugin_SIM.js	/^                onClick={this.reconstructImages.bind(this)}$/;"	M	class:Plugin_SIM
+open	src/AboutMenu.js	/^      open={open}$/;"	M	class:AboutMenu.open
+open	src/SettingsMenu.js	/^      open={open}$/;"	M	class:TabPanel.open
+openFolder	src/SettingsMenu.js	/^                        onClick={openFolder.bind(this, cachedir)}$/;"	M	class:onClick
+openFolder	src/SettingsMenu.js	/^                        onClick={openFolder.bind(this, exportdir)}$/;"	M	class:onClick
+opt	pyengine/pysrc/mlsim_misc.py	/^opt = None$/;"	v
+optim	pyengine/pysrc/mlsim_lib.py	/^import torch.optim as optim$/;"	I	nameref:module:torch.optim
+optim	pyengine/pysrc/time_benchmark_mlsim.py	/^import torch.optim as optim$/;"	I	nameref:module:torch.optim
+options	public/EngineSetup.js	/^    const options = {$/;"	c
+orientation	src/ImgsizeSlider.js	/^            orientation="vertical"$/;"	M	class:ImgsizeSlider
+output	pyengine/util/pyzip.js	/^var output = fs.createWriteStream("engine.mlsim");$/;"	v
+pageYOffset	src/sess.js	/^    pageYOffset : 0, \/\/ stored scroll position (triggered when clearing results)$/;"	p	class:module.exports
+panelTitle	src/Plugin_ERNet.js	/^              {this.state.panelTitle}$/;"	M	class:Plugin_SIM
+panelTitle	src/Plugin_ERNet.js	/^      panelTitle: "ERNet",$/;"	p	class:Plugin_SIM.constructor.state
+panelTitle	src/Plugin_SIM.js	/^        panelTitle: 'ML-SIM',$/;"	p	class:Plugin_SIM.constructor.state
+parse	pyengine/pysrc/swinir_rcab_arch.py	/^    def parse(x):$/;"	f	function:_ntuple	file:
+patch	package.json	/^    "patch": "npm --no-git-tag-version version patch",$/;"	s	object:scripts
+patch	pyengine/package.json	/^        "patch": "npm --no-git-tag-version version patch"$/;"	s	object:scripts
+path	public/EngineCommunication.js	/^const path = require("path");$/;"	C
+path	public/EngineSetup.js	/^const path = require("path");$/;"	C
+path	public/electron.js	/^const path = require("path");$/;"	C
+path	pyengine/util/pyfinalize.js	/^var path = require("path");$/;"	v
+path	src/FileUtils.js	/^var path = window.require("path");$/;"	v
+path	src/Img.js	/^var path = window.require("path");$/;"	v
+path	src/SidePanel.js	/^var path = window.require("path");$/;"	v
+path	util/download_models.js	/^const path = require("path");$/;"	C
+path_send_count	public/EngineCommunication.js	/^var path_send_count = 0; \/\/ elements transmitted$/;"	v
+pdist_json	public/EngineSetup.js	/^let pdist_json = null;$/;"	v
+pdist_json	util/download_models.js	/^let pdist_json = null;$/;"	v
+pdist_models	public/EngineSetup.js	/^      let pdist_models = pdist_json.models;$/;"	v
+performGraphProcessing	pyengine/pysrc/ernet.py	/^def performGraphProcessing(imgfile,opt, basename, imgid):$/;"	f
+pg	pyengine/pysrc/mlsim_misc.py	/^import pyqtgraph as pg$/;"	I	nameref:module:pyqtgraph
+pg	pyengine/pysrc/ptqtgraphTest.py	/^import pyqtgraph as pg$/;"	I	nameref:module:pyqtgraph
+pg	pyengine/pysrc/pyqtgraph_astronaut.py	/^import pyqtgraph as pg$/;"	I	nameref:module:pyqtgraph
+pg	pyengine/pysrc/temp.py	/^import pyqtgraph as pg$/;"	I	nameref:module:pyqtgraph
+pipeline	public/EngineSetup.js	/^const pipeline = promisify(stream.pipeline);$/;"	C
+pipeline	util/download_models.js	/^const pipeline = promisify(stream.pipeline);$/;"	C
+plt	pyengine/pysrc/engine.py	/^import matplotlib.pyplot as plt$/;"	I	nameref:module:matplotlib.pyplot
+plt	pyengine/pysrc/ernet.py	/^import matplotlib.pyplot as plt$/;"	I	nameref:module:matplotlib.pyplot
+plt	pyengine/pysrc/mlsim_misc.py	/^import matplotlib.pyplot as plt$/;"	I	nameref:module:matplotlib.pyplot
+plt	test_MicroManager_python_lib/MicroManager_ImageStream.py	/^import matplotlib.pyplot as plt$/;"	I	nameref:module:matplotlib.pyplot
+plt	test_MicroManager_python_lib/SIM_PC_MicroManager_ImageStream.py	/^import matplotlib.pyplot as plt$/;"	I	nameref:module:matplotlib.pyplot
+plt	test_MicroManager_python_lib/SIM_PC_pcotest.py	/^import matplotlib.pyplot as plt$/;"	I	nameref:module:matplotlib.pyplot
+pluginCmps	src/SidePanel.js	/^      pluginCmps: [],$/;"	p	class:PluginComponents.constructor.state
+pluginSubmenu	src/WindowMenu.js	/^  let pluginSubmenu = [];$/;"	v
+pluginSubmenu	src/WindowMenu.js	/^  let pluginSubmenu;$/;"	v
+plugins	src/App.js	/^let plugins = store.get("plugins");$/;"	v
+plugins	src/SidePanel.js	/^      plugins: store.get("plugins"),$/;"	p	class:PluginComponents.constructor.state
+plugins	src/WindowMenu.js	/^  let plugins = store.get("plugins");$/;"	v
+pointerEvents	src/Img.js	/^          pointerEvents:'none',$/;"	p	class:Img.render.styleHover
+port	public/EngineCommunication.js	/^  let port = "5002";$/;"	v
+port	src/Archive/electron-wait-react.js	/^const port = process.env.PORT ? (process.env.PORT - 100) : 3000;$/;"	C
+position	src/Img.js	/^          position: "absolute",$/;"	p	class:Img.render.styleHover
+prepimg	pyengine/pysrc/mlsim_lib.py	/^def prepimg(stack, self):$/;"	f
+prepimg	pyengine/pysrc/time_benchmark_mlsim.py	/^def prepimg(stack, self):$/;"	f
+prettier	package.json	/^    "prettier": "^1.4.4",$/;"	s	object:devDependencies
+prev_time	util/download_models.js	/^let prev_time = null;$/;"	v
+prev_val	util/download_models.js	/^let prev_val = null;$/;"	v
+previousPluginMenu	src/WindowMenu.js	/^let previousPluginMenu;$/;"	v
+print_progress	public/EngineSetup.js	/^  function print_progress() {$/;"	f
+print_progress	util/download_models.js	/^function print_progress() {$/;"	f
+private	package.json	/^  "private": true,$/;"	b
+process	public/EngineSetup.js	/^const process = require("process");$/;"	C
+process	public/electron.js	/^const process = require("process");$/;"	C
+process	src/WindowMenu.js	/^const process = window.require("process");$/;"	C
+processImage	pyengine/pysrc/ernet.py	/^def processImage(net,opt,imgid,img,savepath_in,savepath_out):$/;"	f
+processImage_tiled	pyengine/pysrc/ernet.py	/^def processImage_tiled(net,opt,imgid,img,savepath_in,savepath_out):$/;"	f
+production	package.json	/^    "production": [$/;"	a	object:browserslist
+progress	src/App.js	/^      var progress = ($/;"	v
+progress	src/CalcStatus.js	/^      this.state = { status: null, progress: null };$/;"	p	class:CalcStatus.constructor.state
+progressBar	src/CalcStatus.js	/^          {progressBar}$/;"	M	class:CalcStatus
+provider	package.json	/^        "provider": "github"$/;"	s	object:build.publish.0
+publish	package.json	/^    "publish": [$/;"	a	object:build
+push-update	package.json	/^    "push-update": "aws s3 cp .\/dist\/latest.yml s3:\/\/mlsim\/dist\/",$/;"	s	object:scripts
+pyProc	public/EngineCommunication.js	/^let pyProc = null;$/;"	v
+pybuild	package.json	/^    "pybuild": "yarn workspace ml-engine pybuild",$/;"	s	object:scripts
+pybuild	pyengine/package.json	/^        "pybuild": "yarn pyinstaller && yarn pypackage",$/;"	s	object:scripts
+pyfinalize	pyengine/package.json	/^        "pyfinalize": "node util\/pyfinalize.js",$/;"	s	object:scripts
+pyinstaller	pyengine/package.json	/^        "pyinstaller": "pipenv run pyinstaller pysrc\/engine.py --distpath . -y --noconfirm",$/;"	s	object:scripts
+pypackage	pyengine/package.json	/^        "pypackage": "yarn pyzip && yarn pyfinalize",$/;"	s	object:scripts
+pypatch	package.json	/^    "pypatch": "yarn workspace ml-engine patch",$/;"	s	object:scripts
+pypush	package.json	/^    "pypush": "yarn workspace ml-engine pypush",$/;"	s	object:scripts
+pypush	pyengine/package.json	/^        "pypush": "aws s3 cp engine.mlsim s3:\/\/ml-sim\/pdist\/ && aws s3 cp latest.json s3:\/\//;"	s	object:scripts
+pyrelease	package.json	/^    "pyrelease": "yarn workspace ml-engine pyrelease",$/;"	s	object:scripts
+pyrelease	pyengine/package.json	/^        "pyrelease": "yarn pybuild && yarn pypush",$/;"	s	object:scripts
+pythonProgramPath	public/EngineSetup.js	/^let pythonProgramPath;$/;"	v
+pyzip	pyengine/package.json	/^        "pyzip": "node util\/pyzip.js",$/;"	s	object:scripts
+quitAndInstallReady	public/electron.js	/^var quitAndInstallReady = false;$/;"	v
+react	package.json	/^    "react": "^16.13.1",$/;"	s	object:dependencies
+react-build	package.json	/^    "react-build": "react-scripts build",$/;"	s	object:scripts
+react-dom	package.json	/^    "react-dom": "^16.13.1",$/;"	s	object:dependencies
+react-eject	package.json	/^    "react-eject": "react-scripts eject",$/;"	s	object:scripts
+react-router-dom	package.json	/^    "react-router-dom": "^5.2.0",$/;"	s	object:dependencies
+react-scripts	package.json	/^    "react-scripts": "3.1.2",$/;"	s	object:devDependencies
+react-start	package.json	/^    "react-start": "cross-env PORT=4001 react-scripts start",$/;"	s	object:scripts
+react-test	package.json	/^    "react-test": "react-scripts test --env=jsdom",$/;"	s	object:scripts
+readFilesRecursively	src/FileUtils.js	/^  readFilesRecursively,$/;"	M	class:module.exports
+readFilesRecursively	src/FileUtils.js	/^function readFilesRecursively(input_dirs, exts, sortBy, callBack) {$/;"	f
+readFilesSync	src/FileUtils.js	/^function readFilesSync(input_dirs, exts, sortBy) {$/;"	f
+readFolders	src/App.js	/^  readFolders(displayedFolders, sortBy) {$/;"	m	class:App
+readFolders	src/sess.js	/^    readFolders : null,$/;"	p	class:module.exports
+readFoldersCallback	src/App.js	/^  readFoldersCallback(filedata) {$/;"	m	class:App
+receiveImageData	pyengine/pysrc/mlsim_misc.py	/^def receiveImageData(conn,npixels,w,h):$/;"	f
+reconstruct	pyengine/pysrc/mlsim_misc.py	/^def reconstruct(exportdir,filepaths, conn):$/;"	f
+reconstruct	pyengine/pysrc/time_benchmark_mlsim.py	/^def reconstruct(exportdir, dirpath):$/;"	f
+reconstructImages	src/Plugin_SIM.js	/^  reconstructImages() {$/;"	m	class:Plugin_SIM
+reconstruct_image	pyengine/pysrc/mlsim_misc.py	/^def reconstruct_image(img):$/;"	f
+recoverResults	src/ImgContainer.js	/^  recoverResults() {$/;"	m	class:ImgContainer
+release	package.json	/^    "release": "yarn react-build && yarn electron-build-publish",$/;"	s	object:scripts
+release-github	package.json	/^    "release-github": "yarn react-build && yarn electron-build-publish-github",$/;"	s	object:scripts
+remote	src/App.js	/^            cachedir={remote.getGlobal("settings").cachedir}$/;"	M	class:cachedir
+remote	src/App.js	/^            exportdir={remote.getGlobal("settings").exportdir}$/;"	M	class:exportdir
+remote	src/App.js	/^const remote = window.require("electron").remote;$/;"	C
+remote	src/Plugin_ERNet.js	/^const remote = window.require("electron").remote;$/;"	C
+remote	src/Plugin_SIM.js	/^const remote = window.require("electron").remote;$/;"	C
+remote	src/SidePanel.js	/^const remote = window.require("electron").remote;$/;"	C
+remote	src/WindowMenu.js	/^const remote = window.require("electron").remote;$/;"	C
+removeDir	src/App.js	/^  removeDir() {$/;"	m	class:App
+removeDir	src/SidePanel.js	/^  removeDir() {$/;"	m	class:SidePanel
+removeResults	src/ImgContainer.js	/^  removeResults() {$/;"	m	class:ImgContainer
+removeResults	src/SidePanel.js	/^  removeResults() {$/;"	m	class:SidePanel
+removeResults	src/sess.js	/^    removeResults : null,$/;"	p	class:module.exports
+removeSelection	src/ImgContainer.js	/^  removeSelection() {$/;"	m	class:ImgContainer
+removeSelection	src/sess.js	/^    removeSelection : null,$/;"	p	class:module.exports
+remove_dataparallel_wrapper	pyengine/pysrc/ernet.py	/^def remove_dataparallel_wrapper(state_dict):$/;"	f
+remove_dataparallel_wrapper	pyengine/pysrc/mlsim_lib.py	/^def remove_dataparallel_wrapper(state_dict):$/;"	f
+remove_dataparallel_wrapper	pyengine/pysrc/time_benchmark_mlsim.py	/^def remove_dataparallel_wrapper(state_dict):$/;"	f
+remove_isolated_pixels	pyengine/pysrc/ernet.py	/^def remove_isolated_pixels(image):$/;"	f
+render	src/CalcStatus.js	/^    render() {$/;"	m	class:CalcStatus
+render	src/ImageView.js	/^  render() {$/;"	m	class:ImageView
+render	src/Img.js	/^    render() {$/;"	m	class:Img
+render	src/ImgsizeSlider.js	/^    render() {$/;"	m	class:ImgsizeSlider
+render	src/Plugin_ERNet.js	/^  render() {$/;"	m	class:Plugin_SIM
+render	src/Plugin_SIM.js	/^  render() {$/;"	m	class:Plugin_SIM
+render	src/SidePanel.js	/^  render() {$/;"	m	class:PluginComponents
+render_status	src/App.js	/^      render_status: 0,$/;"	p	class:App.constructor.state
+renewSubscription	src/App.js	/^  renewSubscription() {$/;"	m	class:App
+resetBtn	src/SidePanel.js	/^    const resetBtn = ($/;"	C
+resetResultImages	src/SidePanel.js	/^      resetResultImages: props.resetResultImages,$/;"	p	class:SidePanel.constructor.state
+resort	src/sess.js	/^    resort : false,$/;"	p	class:module.exports
+response	public/EngineSetup.js	/^    const response = await got(baseurl + "\/latest.json");$/;"	C
+response	util/download_models.js	/^  const response = await got(baseurl + "\/latest.json");$/;"	C
+resultImages	src/App.js	/^      resultImages: null,$/;"	p	class:App.constructor.state
+resultImages	src/ImgContainer.js	/^      resultImages: null,$/;"	p	class:ImgContainer.constructor.state
+resultsBuffer	src/sess.js	/^    resultsBuffer : [],$/;"	p	class:module.exports
+resultsDepth	src/sess.js	/^    resultsDepth : 0, \/\/ number of sequential searches$/;"	p	class:module.exports
+revertResults	src/ImgContainer.js	/^  revertResults() {$/;"	m	class:ImgContainer
+rfc3161TimeStampServer	package.json	/^      "rfc3161TimeStampServer": "http:\/\/timestamp.comodoca.com\/rfc3161"$/;"	s	object:build.win
+rimraf	package.json	/^    "rimraf": "^3.0.2",$/;"	s	object:dependencies
+rimraf	public/EngineSetup.js	/^const rimraf = require("rimraf");$/;"	C
+root	public/index.html	/^    <div id="root"><\/div>$/;"	I
+router	src/index.js	/^let router = ($/;"	v
+runOrSetupEngine	public/EngineSetup.js	/^    const runOrSetupEngine = () => {$/;"	C
+run_command	pyengine/pysrc/engine.py	/^def run_command(conn, address):$/;"	f
+saveInOriginalFolders	src/Plugin_ERNet.js	/^      saveInOriginalFolders: true,$/;"	p	class:Plugin_SIM.constructor.state
+scripts	package.json	/^  "scripts": {$/;"	o
+scripts	pyengine/package.json	/^    "scripts": {$/;"	o
+scrollable-auto-tab-${index}	src/SettingsMenu.js	/^      aria-labelledby={`scrollable-auto-tab-${index}`}$/;"	M	class:TabPanel.aria
+scrollable-auto-tabpanel-${index}	src/SettingsMenu.js	/^      id={`scrollable-auto-tabpanel-${index}`}$/;"	M	class:TabPanel.id
+segment	pyengine/pysrc/ernet.py	/^def segment(exportdir,filepaths,conn,weka_colours,stats_tubule_sheet,graph_metrics,save_in_origi/;"	f
+segmentImages	src/Plugin_ERNet.js	/^  segmentImages() {$/;"	m	class:Plugin_SIM
+selectFile	src/App.js	/^  selectFile() {$/;"	m	class:App
+selectFile	src/ImgContainer.js	/^      selectFile: props.selectFile,$/;"	p	class:ImgContainer.constructor.state
+selectFile	src/SidePanel.js	/^      selectFile: props.selectFile,$/;"	p	class:SidePanel.constructor.state
+selectImage	src/Img.js	/^    selectImage(filepath, e) {$/;"	m	class:Img
+selectedBool	src/Img.js	/^        selectedBool: props.selectedBool,$/;"	p	class:Img.constructor.state
+selectedDir	src/App.js	/^      selectedDir: null,$/;"	p	class:App.constructor.state
+selectedDir	src/SidePanel.js	/^      selectedDir: null,$/;"	p	class:SidePanel.constructor.state
+selectedDir_set	src/SidePanel.js	/^  selectedDir_set(key) {$/;"	m	class:SidePanel
+selectedFilepaths	src/ImgContainer.js	/^      selectedFilepaths: [],$/;"	p	class:ImgContainer.constructor.state
+selectedFilepaths	src/SidePanel.js	/^      selectedFilepaths: [],$/;"	p	class:SidePanel.constructor.state
+selectedFilepaths	src/sess.js	/^    selectedFilepaths: [],$/;"	p	class:module.exports
+sendToPython	public/EngineCommunication.js	/^const sendToPython = (event, json) => {$/;"	C
+serverActive	public/EngineCommunication.js	/^var serverActive = false;$/;"	v
+serverActive	src/sess.js	/^    serverActive : false,$/;"	p	class:module.exports
+server_socket	pyengine/pysrc/mlsim_misc.py	/^server_socket = None$/;"	v
+sess	src/App.js	/^            onClick={sess.hideBackdrop}$/;"	M	class:onClick
+sess	src/App.js	/^var sess = require(".\/sess.js");$/;"	v
+sess	src/CalcStatus.js	/^var sess = require(".\/sess.js");$/;"	v
+sess	src/FileUtils.js	/^var sess = require(".\/sess.js");$/;"	v
+sess	src/ImageView.js	/^var sess = require(".\/sess.js");$/;"	v
+sess	src/Img.js	/^var sess = require(".\/sess.js");$/;"	v
+sess	src/ImgContainer.js	/^var sess = require(".\/sess.js");$/;"	v
+sess	src/ImgsizeSlider.js	/^var sess = require(".\/sess.js");$/;"	v
+sess	src/Plugin_ERNet.js	/^var sess = require(".\/sess.js");$/;"	v
+sess	src/Plugin_SIM.js	/^var sess = require(".\/sess.js");$/;"	v
+sess	src/SidePanel.js	/^            onClick={sess.removeSelection}$/;"	M	class:onClick
+sess	src/SidePanel.js	/^            onDelete={sess.removeSelection}$/;"	M	class:onDelete
+sess	src/SidePanel.js	/^var sess = require(".\/sess.js");$/;"	v
+sess	src/WindowMenu.js	/^var sess = require(".\/sess.js");$/;"	v
+setPlugins	src/WindowMenu.js	/^let setPlugins = (plugin) => {$/;"	v
+setRenderState	src/App.js	/^    window.setRenderState = function(val) {$/;"	f	function:window
+setWidth	src/App.js	/^  setWidth() {$/;"	m	class:App
+setWidth	src/ImageView.js	/^  setWidth() {$/;"	m	class:ImageView
+set_microManagerPluginState	pyengine/pysrc/mlsim_misc.py	/^def set_microManagerPluginState(value):$/;"	f
+settings	public/electron.js	/^global.settings = {$/;"	c	class:global
+settingsClose	src/App.js	/^  settingsClose() {$/;"	m	class:App
+settingsOpen	src/App.js	/^      settingsOpen: false,$/;"	p	class:App.constructor.state
+settingsOpen	src/App.js	/^  settingsOpen() {$/;"	m	class:App
+setupEngine	public/EngineSetup.js	/^  const setupEngine = async () => {$/;"	C
+setup_models	public/EngineSetup.js	/^let setup_models = [];$/;"	v
+setup_models	util/download_models.js	/^let setup_models = [];$/;"	v
+setup_pdist	public/EngineSetup.js	/^let setup_pdist = false;$/;"	v
+shell	src/App.js	/^const shell = window.require("electron").shell;$/;"	C
+shell	src/ImgContainer.js	/^const shell = window.require("electron").shell;$/;"	C
+shell	src/WindowMenu.js	/^const shell = window.require("electron").shell;$/;"	C
+short_name	public/manifest.json	/^  "short_name": "React App",$/;"	s
+showBackdrop	src/App.js	/^      showBackdrop: false,$/;"	p	class:App.constructor.state
+showBackdrop	src/App.js	/^  showBackdrop() {$/;"	m	class:App
+showHashMismatchDialog	public/EngineSetup.js	/^  var showHashMismatchDialog = () => {$/;"	v
+showHideSelect	src/ImgsizeSlider.js	/^    showHideSelect(showSelect) {$/;"	m	class:ImgsizeSlider
+showSelect	src/ImgsizeSlider.js	/^        showSelect: true,$/;"	p	class:ImgsizeSlider.constructor.state
+showingResult	src/sess.js	/^    showingResult : false,$/;"	p	class:module.exports
+sidePanelWidth	src/sess.js	/^    sidePanelWidth : 230,$/;"	p	class:module.exports
+simple_analysis	pyengine/pysrc/ernet.py	/^def simple_analysis(G):$/;"	f
+size	src/Plugin_SIM.js	/^                size="large"$/;"	M	class:Plugin_SIM
+sizes	public/manifest.json	/^      "sizes": "192x192",$/;"	s	object:icons.0
+skip_integrity_check	public/EngineSetup.js	/^let skip_integrity_check = store.get("skip_integrity_check");$/;"	v
+socket	package.json	/^    "socket": "cd pyengine\/pysrc && nodemon --exec python engine.py 5002",$/;"	s	object:scripts
+socketserver	pyengine/pysrc/engine.py	/^def socketserver():$/;"	f
+sortBy	src/App.js	/^      sortBy: null,$/;"	p	class:App.constructor.state
+sortBy	src/sess.js	/^    sortBy : "filename",$/;"	p	class:module.exports
+spacing	src/Plugin_SIM.js	/^            spacing={1}$/;"	M	class:Plugin_SIM
+src	public/manifest.json	/^      "src": "favicon.ico",$/;"	s	object:icons.0
+start	package.json	/^    "start": "concurrently \\"cross-env BROWSER=none yarn react-start\\" \\"yarn electron-localh/;"	s	object:scripts
+start-pdist	package.json	/^    "start-pdist": "concurrently \\"cross-env BROWSER=none yarn react-start\\" \\"cross-env use_/;"	s	object:scripts
+start-pdist-server	package.json	/^    "start-pdist-server": "cross-env use_pdist=1 pdist_server='http:\/\/127.0.0.1:9000\/pyengine/;"	s	object:scripts
+start_plugin_server	pyengine/pysrc/mlsim_misc.py	/^def start_plugin_server(port):$/;"	f
+start_url	public/manifest.json	/^  "start_url": ".\/index.html",$/;"	s
+startedElectron	src/Archive/electron-wait-react.js	/^let startedElectron = false;$/;"	v
+startidx	src/ImgContainer.js	/^      startidx: startidx,$/;"	p	class:ImgContainer.constructor.state
+state	src/App.js	/^    this.state = {$/;"	c	class:App.constructor
+state	src/CalcStatus.js	/^      this.state = { status: null, progress: null };$/;"	c	class:CalcStatus.constructor
+state	src/ImageView.js	/^    this.state = { filepath: "N\/A", appWidth: window.innerWidth };$/;"	c	class:ImageView.constructor
+state	src/Img.js	/^      this.state = {$/;"	c	class:Img.constructor
+state	src/ImgContainer.js	/^    this.state = {$/;"	c	class:ImgContainer.constructor
+state	src/ImgsizeSlider.js	/^      this.state = {$/;"	c	class:ImgsizeSlider.constructor
+state	src/Plugin_ERNet.js	/^              {this.state.panelTitle}$/;"	M	class:Plugin_SIM
+state	src/Plugin_ERNet.js	/^    this.state = {$/;"	c	class:Plugin_SIM.constructor
+state	src/Plugin_SIM.js	/^    this.state = {$/;"	c	class:Plugin_SIM.constructor
+state	src/SidePanel.js	/^    this.state = {$/;"	c	class:PluginComponents.constructor
+state	src/SidePanel.js	/^    this.state = {$/;"	c	class:SidePanel.constructor
+status	src/CalcStatus.js	/^      this.state = { status: null, progress: null };$/;"	p	class:CalcStatus.constructor.state
+step	src/ImgsizeSlider.js	/^              step={50}$/;"	M	class:ImgsizeSlider
+store	public/EngineCommunication.js	/^const store = new Store();$/;"	C
+store	public/EngineSetup.js	/^const store = new Store();$/;"	C
+store	public/electron.js	/^const store = new Store();$/;"	C
+store	src/AboutMenu.js	/^const store = new Store();$/;"	C
+store	src/App.js	/^const store = new Store();$/;"	C
+store	src/SidePanel.js	/^const store = new Store();$/;"	C
+store	src/WindowMenu.js	/^const store = new Store();$/;"	C
+storedGeometry	src/ImgContainer.js	/^      storedGeometry: {},$/;"	p	class:ImgContainer.constructor.state
+str_v	public/EngineSetup.js	/^    let str_v = store.get("pdist_version");$/;"	v
+stream	public/EngineSetup.js	/^const stream = require("stream");$/;"	C
+stream	util/download_models.js	/^const stream = require("stream");$/;"	C
+style	src/Img.js	/^        style = {$/;"	c	class:Img.render
+style	src/Img.js	/^      let style = {$/;"	c	class:Img.render
+style	src/ImgsizeSlider.js	/^                        style={{ fontSize: "14px" }}$/;"	M	class:ImgsizeSlider
+style	src/ImgsizeSlider.js	/^              style={{ width: "150px" }}$/;"	M	class:ImgsizeSlider
+style	src/ImgsizeSlider.js	/^            style={{$/;"	M	class:ImgsizeSlider
+style	src/Plugin_SIM.js	/^                  style={{ marginTop:"20px", marginLeft: "0px", width: "100%", color: "#D9D9D9" /;"	M	class:Plugin_SIM
+style	src/Plugin_SIM.js	/^                style={{$/;"	M	class:Plugin_SIM
+style	src/Plugin_SIM.js	/^            style={{ padding: "0 6px 0 3px" }}$/;"	M	class:Plugin_SIM
+style	src/SidePanel.js	/^              style={{ fontStyle: "italic", color: blue[600], fontSize: 10 }}$/;"	M	class:SidePanel
+style	src/SidePanel.js	/^        <Grid item style={{ width: "80%" }}>$/;"	M	class:SidePanel
+styleHover	src/Img.js	/^        const styleHover = {$/;"	c	class:Img.render
+t0	test_MicroManager_python_lib/MicroManager_ImageStream.py	/^    t0 = time.clock()$/;"	v
+t0	test_MicroManager_python_lib/MicroManager_ImageStream.py	/^t0 = time.clock()$/;"	v
+t0	test_MicroManager_python_lib/SIM_PC_MicroManager_ImageStream.py	/^    t0 = time.clock()$/;"	v
+t0	test_MicroManager_python_lib/SIM_PC_MicroManager_ImageStream.py	/^t0 = time.clock()$/;"	v
+t0	test_MicroManager_python_lib/SIM_PC_pcotest.py	/^        t0 = time.perf_counter()$/;"	v
+t0	test_MicroManager_python_lib/SIM_PC_pcotest.py	/^t0 = time.perf_counter()$/;"	v
+template	src/WindowMenu.js	/^  const template = [$/;"	C
+theme	src/App.js	/^      <ThemeProvider theme={theme}>$/;"	M	class:AnonymousClass050623880301
+theme	src/App.js	/^const theme = createMuiTheme({$/;"	C
+theme	src/Plugin_SIM.js	/^              <ThemeProvider theme={mytheme}>$/;"	M	class:Plugin_SIM
+theme_color	public/manifest.json	/^  "theme_color": "#000000",$/;"	s
+thisapp	pyengine/pysrc/ptqtgraphTest.py	/^    thisapp = App()$/;"	v
+thisapp	pyengine/pysrc/temp.py	/^    thisapp = App()$/;"	v
+thumbJobs	src/sess.js	/^    thumbJobs : [],$/;"	p	class:module.exports
+thumbQueue	src/sess.js	/^    thumbQueue : [],$/;"	p	class:module.exports
+thumbdict	src/sess.js	/^    thumbdict : {},$/;"	p	class:module.exports
+tiff	pyengine/pysrc/misc.py	/^import tifffile as tiff$/;"	I	nameref:module:tifffile
+tiff	pyengine/pysrc/mlsim_lib.py	/^import tifffile as tiff$/;"	I	nameref:module:tifffile
+tiff	pyengine/pysrc/mlsim_misc.py	/^import tifffile as tiff$/;"	I	nameref:module:tifffile
+tiff	pyengine/pysrc/time_benchmark_mlsim.py	/^import tifffile as tiff$/;"	I	nameref:module:tifffile
+title	public/EngineSetup.js	/^      title: "An error occurred during installation of the engine",$/;"	p	class:options
+toPIL	pyengine/pysrc/ernet.py	/^toPIL = transforms.ToPILImage()$/;"	v
+toTensor	pyengine/pysrc/ernet.py	/^toTensor = transforms.ToTensor()$/;"	v
+to_2tuple	pyengine/pysrc/swinir_rcab_arch.py	/^to_2tuple = _ntuple(2)$/;"	v
+toggleSelectedFilepath	src/ImgContainer.js	/^  toggleSelectedFilepath(filepath) {$/;"	m	class:ImgContainer
+toggleSelectedFilepath	src/sess.js	/^    toggleSelectedFilepath : null,$/;"	p	class:module.exports
+toggle_graphMetrics	src/Plugin_ERNet.js	/^  toggle_graphMetrics() {$/;"	m	class:Plugin_SIM
+toggle_saveInOriginalFolders	src/Plugin_ERNet.js	/^  toggle_saveInOriginalFolders() {$/;"	m	class:Plugin_SIM
+toggle_tubuleSheetStats	src/Plugin_ERNet.js	/^  toggle_tubuleSheetStats() {$/;"	m	class:Plugin_SIM
+toggle_wekaColours	src/Plugin_ERNet.js	/^  toggle_wekaColours() {$/;"	m	class:Plugin_SIM
+topOffset	src/sess.js	/^    topOffset : 100,$/;"	p	class:module.exports
+total_downloaded	public/EngineSetup.js	/^let total_downloaded = 0;$/;"	v
+total_downloaded	util/download_models.js	/^let total_downloaded = 0;$/;"	v
+total_to_download	public/EngineSetup.js	/^let total_to_download = 0;$/;"	v
+total_to_download	util/download_models.js	/^let total_to_download = 0;$/;"	v
+transforms	pyengine/pysrc/ernet.py	/^import torchvision.transforms as transforms$/;"	I	nameref:module:torchvision.transforms
+transition	src/Img.js	/^          transition: "border-width 0.13s linear",$/;"	p	class:Img.render.style
+transition	src/Img.js	/^        transition: "border-width 0.3s linear, border-color 1s linear",$/;"	p	class:Img.render.style
+trunc_normal_	pyengine/pysrc/swinir_rcab_arch.py	/^def trunc_normal_(tensor, mean=0., std=1., a=-2., b=2.):$/;"	f
+tryConnection	public/EngineCommunication.js	/^  const tryConnection = () =>$/;"	C
+tryConnection	src/Archive/electron-wait-react.js	/^const tryConnection = () => client.connect({port: port}, () => {$/;"	C
+tubuleSheetStats	src/Plugin_ERNet.js	/^      tubuleSheetStats: true,$/;"	p	class:Plugin_SIM.constructor.state
+type	public/EngineSetup.js	/^      type: "warning",$/;"	p	class:options
+type	public/manifest.json	/^      "type": "image\/png"$/;"	s	object:icons.0
+typeface-roboto	package.json	/^    "typeface-roboto": "^0.0.75",$/;"	s	object:dependencies
+unzipper	package.json	/^    "unzipper": "^0.10.11"$/;"	s	object:dependencies
+unzipper	public/EngineSetup.js	/^const unzipper = require("unzipper");$/;"	C
+update-server	package.json	/^    "update-server": "cross-env MINIO_ACCESS_KEY=admin MINIO_SECRET_KEY=password util\/minio.exe/;"	s	object:scripts
+updateDetected	public/electron.js	/^var updateDetected = false;$/;"	v
+updateGeometry	src/ImgContainer.js	/^  updateGeometry(filepaths) {$/;"	m	class:ImgContainer
+updateGeometry	src/sess.js	/^    updateGeometry : null,$/;"	p	class:module.exports
+updateNotification	src/AppUpdate.js	/^function updateNotification(version) {$/;"	f
+updateSidePanel	src/SidePanel.js	/^  updateSidePanel(selectedFilepaths) {$/;"	m	class:SidePanel
+updateSidePanel	src/sess.js	/^    updateSidePanel : null,$/;"	p	class:module.exports
+updateSidePanelPlugins	src/SidePanel.js	/^  updateSidePanelPlugins(plugins) {$/;"	m	class:PluginComponents
+upscale	pyengine/pysrc/swinir_rcab_arch.py	/^    upscale = 4$/;"	v
+url	public/electron.js	/^const url = require("url");$/;"	C
+useCloud	public/EngineCommunication.js	/^  let useCloud = store.get("useCloud") ? "1" : "0";$/;"	v
+useCloud	pyengine/pysrc/misc.py	/^useCloud = False$/;"	v
+useCloud	src/App.js	/^      useCloud: store.get("useCloud"),$/;"	p	class:App.constructor.state
+useCloud	src/SidePanel.js	/^      useCloud: props.useCloud,$/;"	p	class:SidePanel.constructor.state
+useCloud_get	src/App.js	/^  useCloud_get() {$/;"	m	class:App
+useCloud_set	src/App.js	/^  useCloud_set(val) {$/;"	m	class:App
+useCloud_set	src/SidePanel.js	/^      useCloud_set: props.useCloud_set,$/;"	p	class:SidePanel.constructor.state
+useStyles	src/SimpleBackdrop.js	/^const useStyles = makeStyles((theme) => ({$/;"	C
+use_pysrc	public/EngineSetup.js	/^var use_pysrc = isDev && !process.env.use_pdist;$/;"	v
+value	src/ImgsizeSlider.js	/^                        value="reverseFolderOrder"$/;"	M	class:ImgsizeSlider
+value	src/ImgsizeSlider.js	/^                      <MenuItem style={{ fontSize: "14px" }} value="dateCreated">$/;"	M	class:ImgsizeSlider
+value	src/ImgsizeSlider.js	/^                      <MenuItem style={{ fontSize: "14px" }} value="filename">$/;"	M	class:ImgsizeSlider
+value	src/ImgsizeSlider.js	/^                      <MenuItem style={{ fontSize: "14px" }} value="folderOrder">$/;"	M	class:ImgsizeSlider
+value	src/ImgsizeSlider.js	/^              value={this.state.imgsize}$/;"	M	class:ImgsizeSlider
+value	src/SettingsMenu.js	/^                value={value}$/;"	M	class:value
+value	src/SettingsMenu.js	/^            <TabPanel value={value} index={0}>$/;"	M	class:disabled
+value	src/SettingsMenu.js	/^            <TabPanel value={value} index={1}>$/;"	M	class:yet.
+value	src/SettingsMenu.js	/^      hidden={value !== index}$/;"	M	class:TabPanel.hidden
+variant	src/Plugin_SIM.js	/^                variant="contained"$/;"	M	class:Plugin_SIM
+version	.minio.sys/format.json	/^{"version":"1","format":"fs","id":"86af2569-2c46-4449-b9d2-9561646a2e7e","fs":{"version":"2"}}/;"	s
+version	.minio.sys/format.json	/^{"version":"1","format":"fs","id":"86af2569-2c46-4449-b9d2-9561646a2e7e","fs":{"version":"2"}}/;"	s	object:fs
+version	package.json	/^  "version": "1.0.5",$/;"	s
+version	pyengine/package.json	/^    "version": "2.1.2",$/;"	s
+version	pyengine/util/pyfinalize.js	/^let data = { version: version }$/;"	p	class:data
+version	pyengine/util/pyfinalize.js	/^let version = require('..\/package.json').version;$/;"	v
+vgg11	pyengine/pysrc/vgg.py	/^def vgg11(pretrained=False, progress=True, **kwargs):$/;"	f
+vgg11_bn	pyengine/pysrc/vgg.py	/^def vgg11_bn(pretrained=False, progress=True, **kwargs):$/;"	f
+vgg13	pyengine/pysrc/vgg.py	/^def vgg13(pretrained=False, progress=True, **kwargs):$/;"	f
+vgg13_bn	pyengine/pysrc/vgg.py	/^def vgg13_bn(pretrained=False, progress=True, **kwargs):$/;"	f
+vgg16	pyengine/pysrc/vgg.py	/^def vgg16(pretrained=False, progress=True, **kwargs):$/;"	f
+vgg16_bn	pyengine/pysrc/vgg.py	/^def vgg16_bn(pretrained=False, progress=True, **kwargs):$/;"	f
+vgg19	pyengine/pysrc/vgg.py	/^def vgg19(pretrained=False, progress=True, **kwargs):$/;"	f
+vgg19_bn	pyengine/pysrc/vgg.py	/^def vgg19_bn(pretrained=False, progress=True, **kwargs):$/;"	f
+view	pyengine/pysrc/pyqtgraph_astronaut.py	/^view = pg.ViewBox(enableMouse=True)$/;"	v
+w	pyengine/pysrc/pyqtgraph_astronaut.py	/^w = pg.GraphicsView()$/;"	v
+wait-on	package.json	/^    "wait-on": "3.3.0"$/;"	s	object:devDependencies
+waitForPython	public/EngineCommunication.js	/^const waitForPython = () => {$/;"	C
+walk	src/FileUtils.js	/^  var walk = function(root, dir, done) {$/;"	f	function:readFilesRecursively
+webPreferences	public/electron.js	/^  let webPreferences = {$/;"	c	class:createWindow
+webSecurity	public/electron.js	/^    webSecurity: false, \/\/ is there another way to get images to load?$/;"	p	class:createWindow.webPreferences
+wekaColours	src/Plugin_ERNet.js	/^      wekaColours: true,$/;"	p	class:Plugin_SIM.constructor.state
+width	pyengine/pysrc/swinir_rcab_arch.py	/^    width = (720 \/\/ upscale \/\/ window_size + 1) * window_size$/;"	v
+width	src/App.js	/^      width: null,$/;"	p	class:App.constructor.state
+width	src/Img.js	/^          width: sess.imgsize,$/;"	p	class:Img.render.styleHover
+width	src/sess.js	/^    width : window.innerWidth,$/;"	p	class:module.exports
+win	package.json	/^    "win": {$/;"	o	object:build
+window_partition	pyengine/pysrc/swin3d_rcab3_arch.py	/^def window_partition(x, window_size):$/;"	f
+window_partition	pyengine/pysrc/swinir_rcab_arch.py	/^def window_partition(x, window_size):$/;"	f
+window_reverse	pyengine/pysrc/swin3d_rcab3_arch.py	/^def window_reverse(windows, window_size, B, D, H, W):$/;"	f
+window_reverse	pyengine/pysrc/swinir_rcab_arch.py	/^def window_reverse(windows, window_size, h, w):$/;"	f
+window_size	pyengine/pysrc/swinir_rcab_arch.py	/^    window_size = 8$/;"	v
+workspaces	package.json	/^  "workspaces": [$/;"	a
+x	pyengine/pysrc/swinir_rcab_arch.py	/^    x = model(x)$/;"	v
+x	pyengine/pysrc/swinir_rcab_arch.py	/^    x = torch.randn((1, 3, height, width))$/;"	v
+your	src/App.js	/^            Processing of your images can begin.$/;"	M	class:App
