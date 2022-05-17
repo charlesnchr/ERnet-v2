@@ -34,7 +34,11 @@ On macOS, [Homebrew](https://brew.sh/) can be used:
 Similarly easy install commands tend to be available on Linux distributions, e.g. with *apt-get* on Ubuntu.
 
 ### Installing the project
-Open a terminal and go to the root of the project. Then run the command
+Open a terminal and go to the root of the project:
+
+```cd ERnet-v2/Graphical-App```
+
+Then run the command:
 
 ```yarn```
 
