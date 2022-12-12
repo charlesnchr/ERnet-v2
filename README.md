@@ -23,6 +23,11 @@ Get started right away with our Colab notebooks. If you prefer running the code 
     </a>
 </div>
 
+### Repository structure
+The graphical user interface, Mambio, is provided in the folder `Graphical-App`. Instructions and further information can be found in the corresponding README.
+
+Code for training models based on the ERnet architecture can be found in the folder `Training`, and further information is also in the README file of that folder. A script that generates synthetic ER images can be found in `Training/Simulate_ER`, see the [Synthetic data generation pipeline](#synthetic-data-generation-pipeline-for-testing) section.
+
 ### Mambio
 
 To run inference with ERnet locally, we provide the graphical user interface Mambio: Multi-purpose Advanced ML-based Batch Image Operations. Mambio is a more general software that extends beyond image segmentation — there is also a plugin for [ML-SIM](https://github.com/charlesnchr/ML-SIM).
@@ -32,10 +37,20 @@ To run inference with ERnet locally, we provide the graphical user interface Mam
 </p>
 <br>
 
-### Repository structure
-The graphical user interface, Mambio, is provided in the folder `Graphical-App`. Instructions and further information can be found in the corresponding README.
 
-Code for training models based on the ERnet architecture can be found in the folder `Training`, and further information is also in the README file of that folder.
+### Synthetic data generation pipeline for testing
+
+We propose a model for synthesising ground truth ER images with a simple algorithm. First a set of uniformly distributed coordinates are generated. Delaunay triangulation is performed on the coordinates providing a set of triangles. The circumcentre of each triangle becomes a vertex in a Voronoi diagram. The diagram is formed by connecting vertices between adjacent triangles. This procedure is called Voronoi tessellation. Each edge in the undirected graph corresponding to the Voronoi diagram is the perturbed in the following way: the midpoint of an edge is moved in a random direction by a random distance that is smaller than the length of the edge. The displaced midpoint and the two ends of the edge are then used the produce a smooth curve using cubic spline interpolation of the three points. Finally, the network of vertices connected with interpolated curves are processed with a image formation model that applies blur (diffraction) and noise (Poisson noise and Gaussian read-out noise).
+
+<p>
+<img width="850" src="figs/ER-synthetic-pipeline.png"></a>
+</p>
+
+The steps of this algorithm are illustrated on the figure above. The implementation can be found in `Training/Simulate_ER`, and the script can be used to generate a collection of test images with
+```
+python Simulate_ER_images_script.py
+```
+Parameters are given in the file.
 
 ### Preceding work
 
