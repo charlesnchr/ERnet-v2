@@ -10,8 +10,16 @@
 
 # ERnet Transformer
 ## Vision Transformer applied to segmentation of endoplasmic reticulum (ER) image sequences
+_Meng Lu<sup>1</sup>, __Charles N. Christensen<sup>1,*</sup>__, Jana M. Weber<sup>1,*</sup>, Tasuku Konno, Nino F. Läubli<sup>1</sup>, Katharina M. Scherer<sup>1</sup>, Edward Avezov, Pietro Lio, Alexei A. Lapkin, Gabriele S. Kaminski Schierle<sup>1</sup>, Clemens F. Kaminski<sup>1</sup>_</br></br>
+<sup>1</sup>University of Cambridge, Department of Chemical Engineering and Biotechnology</br>
+<sup> *</sup>Author of this repository - GitHub username: [charlesnchr](http://github.com/charlesnchr) - Email address: <code>charles.n.chr@gmail.com</code>
 
+Pre-print: [https://www.biorxiv.org/content/10.1101/2022.05.17.492189v1](https://www.biorxiv.org/content/10.1101/2022.05.17.492189v1)
+
+#### Description
 ERnet is a vision transformer-based processing pipeline for segmentation and analysis of temporal image sequences of the endoplasmic reticulum. The main component is the vision transformer model used for segmentation, inspired by Swin. Other steps in the pipeline that facilitates quantitative analysis are shown in the figure above.
+
+The method follows our previous work, in which we used a residual neural network for two-class image segmentation, [ERnet — Residual network](https://github.com/charlesnchr/ERNet).
 
 ## Try it
 
