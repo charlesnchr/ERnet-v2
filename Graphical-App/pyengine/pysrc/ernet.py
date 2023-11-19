@@ -673,7 +673,7 @@ def getGraph(img,basename):
     #graph_edges_list = [list(e) for e in graph.edges()]
     #graph_nodes_list = [list(e) for e in graph.nodes()]
 
-    plt.savefig('%s_fig.jpg' % basename, bbox_inches = 'tight', pad_inches = 0, quality=80,dpi=300)
+    plt.savefig('%s_fig.jpg' % basename, bbox_inches = 'tight', pad_inches = 0, dpi=300)
     plt.close()
     open('%s_edges.dat' % basename,'w').write(str(graph.edges()).replace('(','[').replace(')',']'))
     open('%s_nodes.dat' % basename,'w').write(str(graph.nodes()).replace('(','[').replace(')',']'))
