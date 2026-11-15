@@ -1,0 +1,9 @@
+# downloaded by segment.py
+*.pth
+test_images/
+# output of segment.py
+results/
+# Python
+__pycache__/
+.venv/
+.ipynb_checkpoints/
