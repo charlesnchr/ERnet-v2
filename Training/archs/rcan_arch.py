@@ -1,3 +1,7 @@
+# Modified from RCAN, https://github.com/yulunzhang/RCAN,
+# Image Super-Resolution Using Very Deep Residual Channel Attention Networks,
+# https://arxiv.org/abs/1807.02758.
+
 import os
 import torch
 import torch.nn as nn

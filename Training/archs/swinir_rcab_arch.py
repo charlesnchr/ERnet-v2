@@ -1,4 +1,4 @@
-# Modified from https://github.com/JingyunLiang/SwinIR
+# Modified from https://github.com/JingyunLiang/SwinIR (Apache-2.0)
 # SwinIR: Image Restoration Using Swin Transformer, https://arxiv.org/abs/2108.10257
 # Originally Written by Ze Liu, Modified by Jingyun Liang.
 

@@ -4,6 +4,7 @@ Simple structured Delaunay triangulation in 2D with Bowyer-Watson algorithm.
 
 Written by Jose M. Espadero ( http://github.com/jmespadero/pyDelaunay2D )
 Based on code from Ayron Catteau. Published at http://github.com/ayron/delaunay
+pyDelaunay2D is distributed under the GNU General Public License v3.0.
 
 Just pretend to be simple and didactic. The only requisite is numpy.
 Robust checks disabled by default. May not work in degenerate set of points.
