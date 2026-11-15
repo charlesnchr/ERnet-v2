@@ -1,3 +1,8 @@
+# The 3D shifted-window attention is modified from the Video Swin Transformer,
+# https://github.com/SwinTransformer/Video-Swin-Transformer (Apache-2.0),
+# https://arxiv.org/abs/2106.13230. The residual groups follow SwinIR and the
+# channel attention blocks follow RCAN.
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
