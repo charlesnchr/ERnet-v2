@@ -21,6 +21,18 @@
   <sub>Three crops of a 30-frame SIM time-lapse of the ER, segmented and converted to a graph by the model in this repository. Run <code>python fig/make_figures.py</code> to reproduce it.</sub>
 </p>
 
+The endoplasmic reticulum (ER) is the largest membrane structure in the cell, a net of thousands of tubules joined to flat sheets that rewires itself within seconds. Its shape changes in disease, and for a long time those changes could only be described in words. The standard way to pick the ER out of an image was an intensity threshold, which cuts thin tubules wherever the signal dips and leaves no network worth counting.
+
+ERnet replaces the threshold with a network that has learned what tubules and sheets look like. Once every pixel has a class, the tubules are thinned to a skeleton and turned into a graph, with junctions as nodes and tubules as edges. From there the questions have numerical answers. How many junctions are there, how many tubules meet at each, and is the network one connected piece or has it fallen apart?
+
+- **Published in Nature Methods.** [Lu, Christensen et al., 2023](https://doi.org/10.1038/s41592-023-01815-0), cited about 50 times.
+- **Four classes per pixel.** Background, tubules, sheets and sheet-based tubules. The last are tubules that run across the face of a sheet. The paper describes them as a structure of their own and finds them to be a common feature in an analysis of 500 cells.
+- **Topology as numbers.** Every frame gives the nodes and edges of the tubule graph, the degree of each junction, assortativity, clustering, the number of disconnected fragments and the share of the network in the largest one.
+- **Sensitive to disease phenotypes.** In the paper, knocking out atlastin shrinks the largest connected fragment from 90% of all nodes to 4.5%, and the share of three-way junctions falls from 65% to 22%.
+- **Not tied to one microscope.** The paper applies the same model to SIM, wide-field, confocal and Airyscan images, and to COS-7, U2OS, HEK, CHO and SH-SY5Y cells, primary neurons and glia, without retraining.
+- **Checked against ground truth.** With the released weights, the node and edge counts on the paper's ten synthetic networks come out a median of 3% from the truth. The [test](#against-ground-truth) is part of the figure script.
+- **Small.** 0.59 million parameters in a 7 MB file. It runs on four CPU cores at about 40 s per 1024x1024 frame, or on a free GPU in Colab.
+
 ## Try it
 
 Get started right away with our Colab notebooks. If you prefer running the code locally, we provide Jupyter notebooks and Python scripts in this repository. Another option for running ERnet is to use it as a plugin in the graphical front-end, Mambio, based on an integration of the Electron UI framework and a Python environment. Mambio is also included in this repository.
