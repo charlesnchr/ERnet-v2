@@ -17,7 +17,6 @@ from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
 import random
-import parser
 import os
 import shutil
 import matplotlib.pyplot as plt
