@@ -91,6 +91,15 @@ ERnet finds slightly more nodes and edges than there are. The median excess is 2
 
 The paper reports 96 to 99% accuracy for nodes and edges on synthetic networks, and 92 to 99% pixel accuracy against labelled SIM images. It finds the output reliable for images with a signal-to-noise ratio above about 5.
 
+### What the paper measured with it
+
+These numbers are from the [paper](https://doi.org/10.1038/s41592-023-01815-0), not from runs in this repository.
+
+- **Atlastin knockout**, a model of hereditary spastic paraplegia. The largest fragment holds 4.5% of the nodes, against 90% in control cells. Three-way junctions fall from 65% to 22% of the nodes, and the assortativity drops to -0.25.
+- **U18666A**, which blocks cholesterol export from lysosomes as in Niemann-Pick disease type C. The largest fragment holds 2.6% of the nodes, and the assortativity is -0.34.
+- **ATP depletion** with sodium azide. The largest fragment holds 19% of the nodes, a milder break-up than the loss of atlastin causes.
+- **Junction lifetimes** in healthy cells. Junctions of more than three tubules last 9.0 s on average, against 30.8 s for three-way junctions.
+
 ### Repository structure
 The graphical user interface, Mambio, is provided in the folder `Graphical-App`. Instructions and further information can be found in the corresponding README.
 
