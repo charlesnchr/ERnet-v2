@@ -8,7 +8,7 @@ import glob
 from skimage import io, exposure, img_as_ubyte
 from PIL import Image
 
-from tqdm.notebook import tqdm
+from tqdm.auto import tqdm
 from swinir_rcab_arch import SwinIR_RCAB
 from rcan_arch import RCAN
 
