@@ -1,25 +1,25 @@
-<p>
-   <img width="850" src="fig/pipeline.png"></a>
+<h1 align="center">ERnet</h1>
+
+<p align="center">
+  <b>Turn images of the endoplasmic reticulum into a network you can measure.</b><br>
+  A vision transformer labels every pixel as tubule, sheet or sheet-based tubule.<br>
+  The tubules become a graph, and the graph puts numbers on the shape of the ER.
 </p>
-<br>
 
-<div>
-   <a href="https://colab.research.google.com/github/charlesnchr/ERnet-v2/blob/main/ERnet.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
-   <!-- <a href="https://zenodo.org/badge/latestdoi/264818686"><img src="https://zenodo.org/badge/264818686.svg" alt="YOLOv5 Citation"></a> -->
-</div>
+<p align="center">
+  <a href="https://doi.org/10.1038/s41592-023-01815-0"><img src="https://img.shields.io/badge/Nature%20Methods-2023-b31b1b" alt="Paper in Nature Methods"></a>
+  <a href="https://doi.org/10.1101/2022.05.17.492189"><img src="https://img.shields.io/badge/bioRxiv-2022.05.17.492189-b31b1b" alt="bioRxiv preprint"></a>
+  <a href="https://colab.research.google.com/github/charlesnchr/ERnet-v2/blob/main/ERnet.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"></a>
+  <a href="https://doi.org/10.6084/m9.figshare.21975878"><img src="https://img.shields.io/badge/data-figshare-blue" alt="Datasets on figshare"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-GPL--3.0-blue" alt="GPL-3.0 license"></a>
+</p>
 
-# ERnet Transformer
-## Vision Transformer applied to segmentation of endoplasmic reticulum (ER) image sequences
-_Meng Lu<sup>1</sup>, __Charles N. Christensen<sup>1,*</sup>__, Jana M. Weber<sup>1,*</sup>, Tasuku Konno, Nino F. Läubli<sup>1</sup>, Katharina M. Scherer<sup>1</sup>, Edward Avezov, Pietro Lio, Alexei A. Lapkin, Gabriele S. Kaminski Schierle<sup>1</sup>, Clemens F. Kaminski<sup>1</sup>_</br></br>
-<sup>1</sup>University of Cambridge, Department of Chemical Engineering and Biotechnology</br>
-<sup> *</sup>Author of this repository - GitHub username: [charlesnchr](http://github.com/charlesnchr) - Email address: <code>charles.n.chr@gmail.com</code>
-
-Pre-print: [https://www.biorxiv.org/content/10.1101/2022.05.17.492189v1](https://www.biorxiv.org/content/10.1101/2022.05.17.492189v1)
-
-#### Description
-ERnet is a vision transformer-based processing pipeline for segmentation and analysis of temporal image sequences of the endoplasmic reticulum. The main component is the vision transformer model used for segmentation, inspired by Swin. Other steps in the pipeline that facilitates quantitative analysis are shown in the figure above.
-
-The method follows our previous work, in which we used a residual neural network for two-class image segmentation, [ERnet — Residual network](https://github.com/charlesnchr/ERNet).
+<p align="center">
+  <img src="fig/hero.gif" alt="A time-lapse of the endoplasmic reticulum wiping to its segmentation into tubules, sheets and sheet-based tubules, and then to the skeleton graph of the tubules" width="900">
+</p>
+<p align="center">
+  <sub>Three crops of a 30-frame SIM time-lapse of the ER, segmented and converted to a graph by the model in this repository. Run <code>python fig/make_figures.py</code> to reproduce it.</sub>
+</p>
 
 ## Try it
 
@@ -75,5 +75,3 @@ _Meng Lu<sup>1</sup>, Francesca W. van Tartwijk<sup>1</sup>, Julie Qiaojin Lin<s
 Pre-print: [https://www.biorxiv.org/content/10.1101/2020.01.15.907444v2](https://www.biorxiv.org/content/10.1101/2020.01.15.907444v2)
 <br>
 Paper: [https://www.science.org/doi/10.1126/sciadv.abc7209](https://www.science.org/doi/10.1126/sciadv.abc7209)
-
-
