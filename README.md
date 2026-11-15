@@ -100,6 +100,28 @@ These numbers are from the [paper](https://doi.org/10.1038/s41592-023-01815-0), 
 - **ATP depletion** with sodium azide. The largest fragment holds 19% of the nodes, a milder break-up than the loss of atlastin causes.
 - **Junction lifetimes** in healthy cells. Junctions of more than three tubules last 9.0 s on average, against 30.8 s for three-way junctions.
 
+## How it works
+
+**1. Segmentation.** The released network follows [SwinIR](https://github.com/JingyunLiang/SwinIR). Between convolution layers at the input and the output sit two residual groups of six Swin Transformer layers each. They compute self-attention inside windows of 4x4 px, and the windows shift from one layer to the next so that information crosses their borders. The last layer scores four classes for every pixel. Nothing is downsampled along the way, so tubules a few pixels wide keep their full resolution through the 0.59 million parameters of the model.
+
+It was trained with a cross-entropy loss on SIM time-lapses of the ER. The paper used 20 recordings of 60 frames, reconstructed with [ML-SIM](https://github.com/charlesnchr/ML-SIM) and labelled with the Trainable Weka plugin of ImageJ.
+
+**2. Skeleton and graph.** Pixels of the tubule class are kept, specks smaller than 50 px are dropped, and the rest is thinned to lines one pixel wide. [sknw](https://github.com/Image-Py/sknw) converts the skeleton to a graph. Points where lines meet or end become nodes, and the lines between them become edges.
+
+**3. Metrics.** [NetworkX](https://networkx.org/) computes the measurements on the graph. `ernet_metrics.csv` has these columns.
+
+| Column | Meaning |
+| --- | --- |
+| `tubule_fraction`, `sheet_fraction`, `sbt_fraction` | Share of each class in the ER area |
+| `nodes`, `edges` | Size of the tubule graph |
+| `degree_1` to `degree_6` | Number of nodes with that many tubules attached. Degree 1 is a tubule tip and degree 3 a three-way junction |
+| `assortativity` | Whether nodes connect to nodes of similar degree, from -1 to 1 |
+| `clustering` | Average clustering coefficient, the tendency of neighbouring nodes to form triangles |
+| `fragments` | Number of disconnected pieces of the graph |
+| `node_assembly_ratio`, `edge_assembly_ratio` | Share of the nodes and of the edges that belong to the largest fragment. 1 is a fully connected network |
+
+The Methods section of the paper defines them in full.
+
 ### Repository structure
 The graphical user interface, Mambio, is provided in the folder `Graphical-App`. Instructions and further information can be found in the corresponding README.
 
