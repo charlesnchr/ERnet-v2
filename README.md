@@ -65,6 +65,20 @@ A stack gives TIFF stacks in place of the PNG files, with one output frame per i
 
 If you would rather not install anything, the [Colab notebook](https://colab.research.google.com/github/charlesnchr/ERnet-v2/blob/main/ERnet.ipynb) runs the same script in the browser and reads your images from Google Drive.
 
+## Results
+
+The four test acquisitions on the [v2.0 release](https://github.com/charlesnchr/ERnet-v2/releases/tag/v2.0) are SIM images of the ER, two single frames and two time-lapses. Each column below is a 380 px crop of one of them, with the output of `segment.py`.
+
+<p align="center">
+  <img src="fig/results.png" alt="Input, segmentation and skeleton graph for a crop of each of the four test acquisitions" width="900">
+</p>
+
+A time-lapse turns into a table with one row per frame. Over the 30 frames of `TestImage4-stack.tif` the composition of the ER barely moves. Tubules stay at 22 to 23% of the ER area, sheets at 67 to 68% and sheet-based tubules at 9 to 10%. The graph underneath keeps rewiring, between 2,987 and 3,231 nodes and between 3,123 and 3,407 edges. In every frame 87 to 90% of the junctions are three-way junctions. The paper reports the same pattern in its recordings, stable proportions of tubules and sheets under a fluctuating number of nodes and edges.
+
+<p align="center">
+  <img src="fig/dynamics.png" alt="Class fractions, number of nodes and edges, and share of three-way junctions for each of the 30 frames" width="900">
+</p>
+
 ### Repository structure
 The graphical user interface, Mambio, is provided in the folder `Graphical-App`. Instructions and further information can be found in the corresponding README.
 
