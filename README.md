@@ -79,6 +79,18 @@ A time-lapse turns into a table with one row per frame. Over the 30 frames of `T
   <img src="fig/dynamics.png" alt="Class fractions, number of nodes and edges, and share of three-way junctions for each of the 30 frames" width="900">
 </p>
 
+### Against ground truth
+
+A segmentation of real ER has no ground truth for its graph, so the paper tests the graph extraction on synthetic networks. A random network with a known skeleton is rendered with blur and noise, ERnet segments the image, and the graph it finds is compared with the true one. `fig/make_figures.py` repeats that test with the released weights on the ten networks published with the paper.
+
+<p align="center">
+  <img src="fig/benchmark.png" alt="A synthetic network, its ground truth, the graph found by ERnet, and the node and edge counts for ten networks relative to the ground truth" width="900">
+</p>
+
+ERnet finds slightly more nodes and edges than there are. The median excess is 2.9% for nodes and 3.2% for edges. Eight of the ten networks are within 4.3%, and the other two come out 13 to 18% high.
+
+The paper reports 96 to 99% accuracy for nodes and edges on synthetic networks, and 92 to 99% pixel accuracy against labelled SIM images. It finds the output reliable for images with a signal-to-noise ratio above about 5.
+
 ### Repository structure
 The graphical user interface, Mambio, is provided in the folder `Graphical-App`. Instructions and further information can be found in the corresponding README.
 
