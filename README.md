@@ -155,18 +155,37 @@ The weights are also a [direct download](https://github.com/charlesnchr/ERnet-v2
 - The model was trained on SIM images of flat cultured cells and treats the ER as two-dimensional. The paper found this sufficient for COS-7 and U2OS cells and advises caution for cells with a thick, three-dimensional ER.
 - Sheet-based tubules need resolution and signal. On wide-field or noisy images expect fewer of them.
 
-### Preceding work
+## Citation
 
-#### Github repository
-[ERNet — Residual network](https://github.com/charlesnchr/ERNet)
-<br>
-Segmentation of Endoplasmic Reticulum microscopy images using modified CNN-based image restoration models.
+```bibtex
+@article{lu2023ernet,
+  title   = {ERnet: a tool for the semantic segmentation and quantitative analysis of endoplasmic reticulum topology},
+  author  = {Lu, Meng and Christensen, Charles N. and Weber, Jana M. and Konno, Tasuku and L{\"a}ubli, Nino F. and Scherer, Katharina M. and Avezov, Edward and Lio, Pietro and Lapkin, Alexei A. and Kaminski Schierle, Gabriele S. and Kaminski, Clemens F.},
+  journal = {Nature Methods},
+  volume  = {20},
+  number  = {4},
+  pages   = {569--579},
+  year    = {2023},
+  doi     = {10.1038/s41592-023-01815-0}
+}
+```
 
-#### Science Advances publication
-_Meng Lu<sup>1</sup>, Francesca W. van Tartwijk<sup>1</sup>, Julie Qiaojin Lin<sup>1</sup>, Wilco Nijenhuis, Pierre Parutto, Marcus Fantham<sup>1</sup>,  __Charles N. Christensen<sup>1,*</sup>__, Edward  Avezov, Christine E. Holt, Alan Tunnacliffe, David Holcman, Lukas C. Kapitein, Gabriele Kaminski Schierle<sup>1</sup>, Clemens F. Kaminski<sup>1</sup>_</br></br>
-<sup>1</sup>University of Cambridge, Department of Chemical Engineering and Biotechnology</br>
-<sup> *</sup>Author of this repository - GitHub username: [charlesnchr](http://github.com/charlesnchr)
+The accepted manuscript is free to read in the [Cambridge repository](https://www.repository.cam.ac.uk/handle/1810/347033), and the preprint is on [bioRxiv](https://doi.org/10.1101/2022.05.17.492189).
 
-Pre-print: [https://www.biorxiv.org/content/10.1101/2020.01.15.907444v2](https://www.biorxiv.org/content/10.1101/2020.01.15.907444v2)
-<br>
-Paper: [https://www.science.org/doi/10.1126/sciadv.abc7209](https://www.science.org/doi/10.1126/sciadv.abc7209)
+ERnet was developed at the University of Cambridge, in the Department of Chemical Engineering and Biotechnology and the Department of Computer Science and Technology. Meng Lu and Charles N. Christensen built the pipeline, Charles N. Christensen developed the segmentation model and Jana M. Weber the graph analysis. Questions about the code go to Charles, through the [issue tracker](https://github.com/charlesnchr/ERnet-v2/issues) or at `charles.n.chr@gmail.com`.
+
+## Related work
+
+- [ERNet](https://github.com/charlesnchr/ERNet) is the predecessor, a residual network for two-class segmentation of the ER, used in [Lu et al., Science Advances 2020](https://doi.org/10.1126/sciadv.abc7209).
+- [ML-SIM](https://github.com/charlesnchr/ML-SIM) reconstructs the SIM images that ERnet was trained on.
+- [VSR-SIM](https://github.com/charlesnchr/VSR-SIM) reconstructs SIM videos of moving samples with a video transformer.
+
+## License
+
+The code and the pre-trained weights are released under the [GNU General Public License v3.0](LICENSE). You can use, modify and redistribute them, and derived work that you distribute has to stay under the same license. Code derived from other projects is listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+## Credits
+
+- [SwinIR](https://github.com/JingyunLiang/SwinIR), the [Swin Transformer](https://github.com/microsoft/Swin-Transformer) and the [Video Swin Transformer](https://github.com/SwinTransformer/Video-Swin-Transformer) for the architecture.
+- [sknw](https://github.com/Image-Py/sknw) and [NetworkX](https://networkx.org/) for the graph analysis.
+- [pyDelaunay2D](https://github.com/jmespadero/pyDelaunay2D) for the triangulation in the synthetic ER generator.
