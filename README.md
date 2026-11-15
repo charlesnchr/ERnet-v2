@@ -134,10 +134,26 @@ The labelled images are public. [ERnet datasets](https://doi.org/10.6084/m9.figs
   <img src="fig/ER-synthetic-pipeline.png" alt="Delaunay triangulation, Voronoi tessellation, spline interpolation and image formation" width="820">
 </p>
 
-### Repository structure
-The graphical user interface, Mambio, is provided in the folder `Graphical-App`. Instructions and further information can be found in the corresponding README.
+## What is in the repository
 
-Code for training models based on the ERnet architecture can be found in the folder `Training`, and further information is also in the README file of that folder. A script that generates synthetic ER images can be found in `Training/Simulate_ER`, see the [Synthetic data generation pipeline](#synthetic-data-generation-pipeline-for-testing) section.
+| Path | Contents |
+| --- | --- |
+| `segment.py` | Segment images and stacks with the pre-trained model and measure the tubule graph |
+| `ERnet.ipynb` | The same as a Colab notebook |
+| `Inference/` | The graph analysis used by `segment.py`, and the evaluation code of earlier versions of the notebook |
+| `Training/` | Network architectures, training code and the synthetic ER generator |
+| `fig/make_figures.py` | Regenerates the figures on this page, including the ground-truth test |
+| `Graphical-App/` | Mambio, the desktop app from the paper. It is no longer maintained, see its [README](Graphical-App) for what to use in its place |
+
+The weights are also a [direct download](https://github.com/charlesnchr/ERnet-v2/releases/download/v2.0/20220306_ER_4class_swinir_nch1.pth).
+
+## Limits
+
+- The released weights segment one frame at a time. The paper also describes a spatio-temporal model that reads five adjacent frames through 3D attention windows. Its code is in `Training/archs/swin3d_rcab3_arch.py`, without weights. Some of the frame-to-frame change in the graph of a time-lapse is therefore segmentation noise.
+- The graph covers the tubule class only. A sheet between two regions of tubules separates them in the graph, so the fragment count and the assembly ratios depend on how much of the field of view is sheet. Compare them between images of similar regions.
+- The skeleton is not pruned. Short spurs count as tubule tips, which inflates the number of degree-1 nodes.
+- The model was trained on SIM images of flat cultured cells and treats the ER as two-dimensional. The paper found this sufficient for COS-7 and U2OS cells and advises caution for cells with a thick, three-dimensional ER.
+- Sheet-based tubules need resolution and signal. On wide-field or noisy images expect fewer of them.
 
 ### Preceding work
 
