@@ -1,6 +1,7 @@
 """Segment endoplasmic reticulum images with the pre-trained ERnet model and
 measure the topology of the tubular network.
 
+    python segment.py --demo
     python segment.py cell.png timelapse.tif --out results
 
 Inputs are greyscale images (PNG, JPG, TIFF) or TIFF stacks of frames. For every
@@ -34,7 +35,12 @@ RELEASE = "https://github.com/charlesnchr/ERnet-v2/releases/download/v2.0/"
 WEIGHTS_NAME = "20220306_ER_4class_swinir_nch1.pth"
 SHA256 = {
     WEIGHTS_NAME: "9d20a526dd6f001a13fbb984d549e7547cab02cf5a7b2256b29d46f5d3a95387",
+    "TestImage1.png": "6311238a605bcec57b83e5dd0af1dfc7a120079bc2dd2264d026431bfe0d786e",
+    "TestImage2.png": "8f8639d2bc5579dd21339ab684f46b9b9657bf92f4f81686f1ac791768c88213",
+    "TestImage3-stack.tif": "f1663ba6bea0f77e9460971621447a41ef07f636adf1dfc5c317f72fcd331946",
+    "TestImage4-stack.tif": "1b7997f76c9f69008754735167e47972a40b945d290a55b8bb98f2ca727417a4",
 }
+DEMO_FILES = ("TestImage1.png", "TestImage3-stack.tif")
 
 # Grey values of the class map, the same as in the Colab notebook and the desktop app.
 BACKGROUND, SHEET, SBT, TUBULE = 0, 85, 170, 255
@@ -272,12 +278,24 @@ def process(net, path, frames, out_dir, device, tile):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("images", nargs="+", help="images or TIFF stacks to segment")
+    p.add_argument("images", nargs="*", help="images or TIFF stacks to segment")
+    p.add_argument("--demo", action="store_true", help="download two test acquisitions (6 MB) and segment them")
     p.add_argument("--out", default="results", help="output folder")
     p.add_argument("--weights", default=os.path.join(HERE, WEIGHTS_NAME), help="path to the model file")
     p.add_argument("--tile", type=int, default=1024, help="largest side processed in one pass, in pixels")
     p.add_argument("--cpu", action="store_true", help="run on CPU even if a GPU is available")
     args = p.parse_args()
+
+    images = list(args.images)
+    if args.demo:
+        os.makedirs(os.path.join(HERE, "test_images"), exist_ok=True)
+        for name in DEMO_FILES:
+            path = os.path.join(HERE, "test_images", name)
+            if not os.path.isfile(path):
+                download(name, path)
+            images.append(path)
+    if not images:
+        p.error("give at least one image, or use --demo")
 
     device = torch.device("cuda" if torch.cuda.is_available() and not args.cpu else "cpu")
     net = load_model(args.weights, device)
@@ -285,7 +303,7 @@ def main():
     print("Segmenting on", device)
 
     rows = []
-    for path in args.images:
+    for path in images:
         try:
             frames = read_frames(path)
         except Exception as err:  # the readers raise many different types for a bad file
