@@ -51,7 +51,7 @@ def generate_ER_images(
 ):
     def voronoi(P):
         delauny = Delaunay(P)
-        triangles = delauny.points[delauny.vertices]
+        triangles = delauny.points[delauny.simplices]
 
         lines = []
 
