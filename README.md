@@ -1,5 +1,5 @@
 <p>
-   <img width="850" src="figs/pipeline.png"></a>
+   <img width="850" src="fig/pipeline.png"></a>
 </p>
 <br>
 
@@ -41,7 +41,7 @@ Code for training models based on the ERnet architecture can be found in the fol
 To run inference with ERnet locally, we provide the graphical user interface Mambio: Multi-purpose Advanced ML-based Batch Image Operations. Mambio is a more general software that extends beyond image segmentation — there is also a plugin for [ML-SIM](https://github.com/charlesnchr/ML-SIM).
 
 <p>
-   <img width="850" src="figs/mambio.png"></a>
+   <img width="850" src="fig/mambio.png"></a>
 </p>
 <br>
 
@@ -51,7 +51,7 @@ To run inference with ERnet locally, we provide the graphical user interface Mam
 We propose a model for synthesising ground truth ER images with a simple algorithm. First a set of uniformly distributed coordinates are generated. Delaunay triangulation is performed on the coordinates providing a set of triangles. The circumcentre of each triangle becomes a vertex in a Voronoi diagram. The diagram is formed by connecting vertices between adjacent triangles. This procedure is called Voronoi tessellation. Each edge in the undirected graph corresponding to the Voronoi diagram is the perturbed in the following way: the midpoint of an edge is moved in a random direction by a random distance that is smaller than the length of the edge. The displaced midpoint and the two ends of the edge are then used the produce a smooth curve using cubic spline interpolation of the three points. Finally, the network of vertices connected with interpolated curves are processed with a image formation model that applies blur (diffraction) and noise (Poisson noise and Gaussian read-out noise).
 
 <p>
-<img width="850" src="figs/ER-synthetic-pipeline.png"></a>
+<img width="850" src="fig/ER-synthetic-pipeline.png"></a>
 </p>
 
 The steps of this algorithm are illustrated on the figure above. The implementation can be found in `Training/Simulate_ER`, and the script can be used to generate a collection of test images with
