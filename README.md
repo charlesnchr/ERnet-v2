@@ -35,28 +35,40 @@ ERnet replaces the threshold with a network that has learned what tubules and sh
 
 ## Try it
 
-Get started right away with our Colab notebooks. If you prefer running the code locally, we provide Jupyter notebooks and Python scripts in this repository. Another option for running ERnet is to use it as a plugin in the graphical front-end, Mambio, based on an integration of the Electron UI framework and a Python environment. Mambio is also included in this repository.
+```bash
+git clone https://github.com/charlesnchr/ERnet-v2 && cd ERnet-v2
+pip install -r requirements.txt
+python segment.py --demo
+```
 
-<div align="center">
-    <a href="https://colab.research.google.com/github/charlesnchr/ERnet-v2/blob/main/ERnet.ipynb">
-        <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-colab-small.png" width="15%"/>
-    </a>
-</div>
+The demo downloads the pre-trained weights (7 MB), one SIM image and a 5-frame SIM time-lapse (6 MB), and segments them. On four CPU cores that takes about four minutes. A GPU is used when one is available.
+
+To run it on your own data, pass the files.
+
+```bash
+python segment.py cell.png timelapse.tif --out results
+```
+
+Inputs are greyscale PNG, JPG or TIFF images, or TIFF stacks with one frame per time point. Each frame is stretched between its 1st and 99th percentile, so the bit depth does not matter. Frames larger than 1024 px are processed in overlapping tiles.
+
+Everything lands in the output folder.
+
+| File | Contents |
+| --- | --- |
+| `NAME_classes.png` | The class of every pixel as a grey value: 0 background, 85 sheet, 170 sheet-based tubule, 255 tubule |
+| `NAME_colour.png` | The same in colour: tubules cyan, sheets yellow, sheet-based tubules pink |
+| `NAME_graph.png` | The skeleton of the tubules over the input, with tips in green, three-way junctions in red and junctions of more than three tubules in violet |
+| `NAME_summary.png` | One figure with the input, the segmentation, the graph and the measurements |
+| `ernet_metrics.csv` | One row per frame with the class fractions and the graph metrics |
+
+A stack gives TIFF stacks in place of the PNG files, with one output frame per input frame.
+
+If you would rather not install anything, the [Colab notebook](https://colab.research.google.com/github/charlesnchr/ERnet-v2/blob/main/ERnet.ipynb) runs the same script in the browser and reads your images from Google Drive.
 
 ### Repository structure
 The graphical user interface, Mambio, is provided in the folder `Graphical-App`. Instructions and further information can be found in the corresponding README.
 
 Code for training models based on the ERnet architecture can be found in the folder `Training`, and further information is also in the README file of that folder. A script that generates synthetic ER images can be found in `Training/Simulate_ER`, see the [Synthetic data generation pipeline](#synthetic-data-generation-pipeline-for-testing) section.
-
-### Mambio
-
-To run inference with ERnet locally, we provide the graphical user interface Mambio: Multi-purpose Advanced ML-based Batch Image Operations. Mambio is a more general software that extends beyond image segmentation — there is also a plugin for [ML-SIM](https://github.com/charlesnchr/ML-SIM).
-
-<p>
-   <img width="850" src="fig/mambio.png"></a>
-</p>
-<br>
-
 
 ### Synthetic data generation pipeline for testing
 
