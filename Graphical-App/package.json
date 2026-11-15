@@ -58,7 +58,6 @@
   "homepage": "./",
   "scripts": {
     "download-models": "node util/download_models.js",
-    "update-server": "cross-env MINIO_ACCESS_KEY=admin MINIO_SECRET_KEY=password util/minio.exe server .",
     "react-start": "cross-env PORT=4001 react-scripts start",
     "react-build": "react-scripts build",
     "react-test": "react-scripts test --env=jsdom",
