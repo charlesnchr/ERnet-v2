@@ -4,9 +4,9 @@ measure the topology of the tubular network.
     python segment.py cell.png timelapse.tif --out results
 
 Inputs are greyscale images (PNG, JPG, TIFF) or TIFF stacks of frames. For every
-input the script writes the class map, a colour rendering and the skeleton graph
-drawn over the image. One row per frame goes to ernet_metrics.csv. The weights
-are downloaded on first use.
+input the script writes the class map, a colour rendering, the skeleton graph
+drawn over the image and a summary figure. One row per frame goes to
+ernet_metrics.csv. The weights are downloaded on first use.
 """
 
 import argparse
@@ -170,6 +170,64 @@ def draw_graph(frame, skeleton_graph, graph):
     return rgb
 
 
+def summary_figure(path, name, frame, colour, graph_rgb, rows):
+    """Input, segmentation and graph of the first frame, with the metrics underneath."""
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    from matplotlib.patches import Patch
+    from matplotlib.ticker import MaxNLocator
+
+    as_rgb = lambda c: tuple(v / 255 for v in c)
+    fig, axes = plt.subplots(2, 3, figsize=(15, 9.4), height_ratios=(3, 1.6), constrained_layout=True)
+    titles = ("Input", "ERnet segmentation", "Tubule skeleton and junctions")
+    for ax, img, title in zip(axes[0], (frame, colour, graph_rgb), titles):
+        ax.imshow(img, cmap="gray", interpolation="nearest")
+        ax.set_title(title if len(rows) == 1 else title + " (frame 0)")
+        ax.axis("off")
+    axes[0, 1].legend(handles=[Patch(color=as_rgb(COLOURS[c]), label=l) for c, l in
+                               ((TUBULE, "tubule"), (SHEET, "sheet"), (SBT, "sheet-based tubule"))],
+                      loc="lower left", fontsize=9, framealpha=0.9)
+    axes[0, 2].legend(handles=[Patch(color=as_rgb(DEGREE_COLOURS[1]), label="tip (degree 1)"),
+                               Patch(color=as_rgb(DEGREE_COLOURS[3]), label="three-way junction"),
+                               Patch(color=as_rgb(MULTIWAY_COLOUR), label="multi-way junction")],
+                      loc="lower left", fontsize=9, framealpha=0.9)
+
+    first = rows[0]
+    t = [r["frame"] for r in rows]
+    fraction_ax, graph_ax, degree_ax = axes[1]
+    fractions = (("tubule_fraction", TUBULE, "tubule"), ("sheet_fraction", SHEET, "sheet"),
+                 ("sbt_fraction", SBT, "sheet-based tubule"))
+    if len(rows) == 1:
+        fraction_ax.bar([l for _, _, l in fractions], [100 * first[k] for k, _, _ in fractions],
+                        color=[as_rgb(COLOURS[c]) for _, c, _ in fractions])
+        graph_ax.axis("off")
+        lines = ["%s: %s" % (k.replace("_", " "), ("%.3f" % first[k]) if isinstance(first[k], float) else first[k])
+                 for k in COLUMNS[5:12]]
+        graph_ax.text(0.02, 0.95, "\n".join(lines), va="top", fontsize=12, family="monospace")
+    else:
+        for key, c, label in fractions:
+            fraction_ax.plot(t, [100 * r[key] for r in rows], color=as_rgb(COLOURS[c]), lw=2, label=label)
+        fraction_ax.set_ylim(0, 100)
+        graph_ax.plot(t, [r["nodes"] for r in rows], lw=2, label="nodes")
+        graph_ax.plot(t, [r["edges"] for r in rows], lw=2, label="edges")
+        graph_ax.set_title("Tubule graph")
+        for ax in (fraction_ax, graph_ax):
+            ax.set_xlabel("Frame")
+            ax.xaxis.set_major_locator(MaxNLocator(integer=True))
+            ax.legend(fontsize=9)
+    fraction_ax.set_ylabel("% of ER area")
+    fraction_ax.set_title("ER composition")
+    means = [np.mean([r["degree_%d" % d] for r in rows]) for d in range(1, 7)]
+    degree_ax.bar(range(1, 7), means, color=[as_rgb(DEGREE_COLOURS.get(d, MULTIWAY_COLOUR)) for d in range(1, 7)])
+    degree_ax.set_xlabel("Node degree")
+    degree_ax.set_ylabel("Nodes" if len(rows) == 1 else "Nodes (mean over frames)")
+    degree_ax.set_title("Degree distribution")
+    fig.suptitle(name)
+    fig.savefig(path, dpi=110)
+    plt.close(fig)
+
+
 def process(net, path, frames, out_dir, device):
     """Segment and analyse the frames of one file. Returns one metrics row per frame."""
     name = os.path.splitext(os.path.basename(path))[0]
@@ -191,6 +249,7 @@ def process(net, path, frames, out_dir, device):
     else:
         for suffix, stack in (("classes", classes), ("colour", colours), ("graph", graphs)):
             tifffile.imwrite("%s_%s.tif" % (base, suffix), np.stack(stack), compression="zlib")
+    summary_figure(base + "_summary.png", os.path.basename(path), frames[0], colours[0], graphs[0], rows)
     return rows
 
 
