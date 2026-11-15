@@ -276,7 +276,7 @@ def process(net, path, frames, out_dir, device, tile):
     return rows
 
 
-def main():
+def main(argv=None):
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("images", nargs="*", help="images or TIFF stacks to segment")
     p.add_argument("--demo", action="store_true", help="download two test acquisitions (6 MB) and segment them")
@@ -284,7 +284,7 @@ def main():
     p.add_argument("--weights", default=os.path.join(HERE, WEIGHTS_NAME), help="path to the model file")
     p.add_argument("--tile", type=int, default=1024, help="largest side processed in one pass, in pixels")
     p.add_argument("--cpu", action="store_true", help="run on CPU even if a GPU is available")
-    args = p.parse_args()
+    args = p.parse_args(argv)
 
     images = list(args.images)
     if args.demo:
