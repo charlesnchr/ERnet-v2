@@ -313,6 +313,7 @@ def EvaluateModel(opt):
     checkpoint = torch.load(opt.weights, map_location=device)
     print("loading checkpoint", opt.weights)
     net.load_state_dict(checkpoint["state_dict"])
+    net.eval()  # turn off stochastic depth, otherwise the output differs between runs
 
     if opt.root[0].split(".")[-1].lower() in ["png", "jpg", "tif"]:
         imgs = opt.root
