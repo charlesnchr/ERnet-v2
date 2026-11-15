@@ -1,0 +1,14 @@
+# Packages for segment.py, the Colab notebook and Inference/.
+# Training needs a few more, see Training/README.md.
+torch
+torchvision
+einops
+numpy
+scikit-image
+tifffile
+pillow
+matplotlib
+networkx
+sknw
+opencv-python-headless
+tqdm
