@@ -26,7 +26,7 @@ The method follows our previous work, in which we used a residual neural network
 Get started right away with our Colab notebooks. If you prefer running the code locally, we provide Jupyter notebooks and Python scripts in this repository. Another option for running ERnet is to use it as a plugin in the graphical front-end, Mambio, based on an integration of the Electron UI framework and a Python environment. Mambio is also included in this repository.
 
 <div align="center">
-    <a href="https://colab.research.google.com/github/charlesnchr/ERnet-v2/blob/master/ERnet.ipynb">
+    <a href="https://colab.research.google.com/github/charlesnchr/ERnet-v2/blob/main/ERnet.ipynb">
         <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-colab-small.png" width="15%"/>
     </a>
 </div>
