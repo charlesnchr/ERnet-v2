@@ -1,84 +1,39 @@
-# ERnet Transformer — Graphical Desktop Application
+# Mambio, the ERnet desktop app
 
-**Author of this repository**:
-- Name: Charles Nicklas Christensen
-- GitHub: [charlesnchr](http://github.com/charlesnchr)
-- Email: <code>charles.n.chr@gmail.com</code>
-- Twitter: [charlesnchr](https://twitter.com/charlesnchr)
+Mambio is the desktop app that came with the paper. It shows the images in a folder as thumbnails, segments the ones you select with ERnet and displays the results. The interface is an Electron app and the segmentation runs in a Python process.
 
-This sub-project of ERnet provides an easy-to-use graphical user interface based on the Electron framework and an engine written in Python to apply the neural network models trained with the ERnet code.
+<p align="center">
+  <img src="../fig/mambio.png" alt="The Mambio desktop app with segmented ER images" width="820">
+</p>
 
-### To-do
+## Status
 
-- Dropdown model selection to integrate with Python engine. Currently the path for a pre-trained model is hardcoded into `mlsim_lib.py`
-- Complete plug-in framework so that other image processing routines can be used
-- Support SIM dataset generation within the app based on the simulation code in `../MLSIM_datagen`.
-- Implement training routines for generated datasets.
+This copy of the app is not maintained, and its installation instructions no longer work. The source stays here for reference.
 
-## Installation
+- The interface was developed against Node.js 13 and Electron 6, both from 2019. Electron 6 has no build for Apple Silicon.
+- `yarn download-models` fetched the weights from a storage bucket that has been deleted.
+- The Python setup pins Python 3.6 and PyTorch 1.8.1. pip has no PyTorch 1.8.1 build for the Python versions in use today.
 
+## What to use instead
 
-### Dependencies
-Installation of NodeJS and Yarn are required for building the project. Following version have been tested:
-- NodeJS 13.7.0
-- Yarn 1.21.1
-- Anaconda 3
+[`segment.py`](../README.md#try-it) in the root of this repository runs the same model from a terminal. It processes any number of images and stacks in one call and writes the segmentation, the skeleton graph and a table of metrics.
 
-
-On Windows, [Chocolatey](https://chocolatey.org/install) is recommended for installation of these dependencies using the following commands in an administrative shell:
-```choco install nodejs yarn```
-
-On macOS, [Homebrew](https://brew.sh/) can be used:
-```brew install yarn node```
-
-Similarly easy install commands tend to be available on Linux distributions, e.g. with *apt-get* on Ubuntu.
-
-### Installing the project
-Open a terminal and go to the root of the project:
-
-```cd ERnet-v2/Graphical-App```
-
-Then run the command:
-
-```yarn```
-
-Download required Pytorch models:
-
-```yarn download-models```
-
-The model can also be downloaded explicitly, but the above script is recommended for proper folder placement. [Download link](https://ml-sim.s3.eu-west-2.amazonaws.com/pdist/models/DIV2K_randomised_3x3_20200317.pth).
-
-#### Setup Python environment
-First download and install Anaconda if you do not have it: https://www.anaconda.com/products/individual
-
-```
-conda create -n ML-SIM python=3.6
-```
-Make sure to do "conda init" on a fresh install of Anaconda for environment switching to be possible. Now run:
-```
-conda activate ML-SIM
-```
-Install the Python module pipenv to manage the virtual Python environment and install all packages from the Pipfile
-```
-pip install pipenv
-pipenv install
-```
-As of now it is not possible to install packages with the Pipfile by specifying a link via ```-f```, so in order to setup Pytorch, use the following command
-```
-pipenv run pip install torch==1.8.1+cu102 -f https://download.pytorch.org/whl/torch_stable.html
-```
-or in macOS and Linux simply
-```
-pipenv run pip install torch
+```bash
+pip install -r requirements.txt
+python segment.py path/to/images/*.tif --out results
 ```
 
-## Run the app
-First you start the Python engine with (assuming current directory is as above)
-```
-yarn socket
-```
-Assuming everything has initialised well, you should see a terminal print line saying **now listening**. You are now ready to start the graphical user interface with:
-```
-yarn start
-```
-which will start Electron.
+The [Colab notebook](https://colab.research.google.com/github/charlesnchr/ERnet-v2/blob/main/ERnet.ipynb) does the same in a browser.
+
+If you need a graphical interface, the [ML-SIM repository](https://github.com/charlesnchr/ML-SIM/tree/master/Graphical-App) has a maintained version of the app on Electron 45, with an ERnet plugin. That plugin runs an earlier residual network with three classes: background, tubule and sheet. It has no class for sheet-based tubules, and the transformer model of this repository has not been ported to it.
+
+## If you want to revive it
+
+| Path | Contents |
+| --- | --- |
+| `public/` | Electron main process |
+| `src/` | The React interface. `Plugin_ERNet.js` is the ERnet side panel |
+| `pyengine/pysrc/` | The Python engine. `engine.py` is the socket server and `ernet.py` runs the model |
+| `util/download_models.js` | The model downloader that points at the deleted bucket |
+
+The engine expects the weights at `pyengine/models/20220306_ER_4class_swinir_nch1.pth`. The file is on the [v2.0 release](https://github.com/charlesnchr/ERnet-v2/releases/tag/v2.0). The ML-SIM copy of the app was moved to Electron 45 and Vite in November 2026. The two copies share most of their code, and that repository's history shows the steps.
