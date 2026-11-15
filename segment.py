@@ -104,16 +104,33 @@ def normalise(frame):
     return (frame * 255).astype("uint8")
 
 
-def classify(net, frame, device):
-    """Run the network on one uint8 frame and return the class map in grey values."""
-    h, w = frame.shape
-    x = torch.from_numpy(frame.astype("float32") / 255)[None, None].to(device)
+def classify(net, tile, device):
+    """Run the network on one uint8 tile and return the class map in grey values."""
+    h, w = tile.shape
+    x = torch.from_numpy(tile.astype("float32") / 255)[None, None].to(device)
     pad_h, pad_w = -h % WINDOW, -w % WINDOW
     if pad_h or pad_w:
         x = torch.nn.functional.pad(x, (0, pad_w, 0, pad_h), mode="reflect")
     with torch.no_grad():
         index = net(x)[0, :, :h, :w].argmax(0).cpu().numpy()
     return OUTPUT_TO_GREY[index]
+
+
+def segment(net, frame, device, tile=1024, overlap=64):
+    """Segment one normalised frame. Frames larger than a tile are processed in overlapping tiles."""
+    h, w = frame.shape
+    if h <= tile and w <= tile:
+        return classify(net, frame, device)
+    out = np.zeros((h, w), "uint8")
+    step = tile - 2 * overlap
+    for y in range(0, h, step):
+        for x in range(0, w, step):
+            y0, x0 = max(y - overlap, 0), max(x - overlap, 0)
+            y1, x1 = min(y + step + overlap, h), min(x + step + overlap, w)
+            classes = classify(net, frame[y0:y1, x0:x1], device)
+            ye, xe = min(y + step, h), min(x + step, w)
+            out[y:ye, x:xe] = classes[y - y0:ye - y0, x - x0:xe - x0]
+    return out
 
 
 def tubule_graph(classes):
@@ -228,13 +245,13 @@ def summary_figure(path, name, frame, colour, graph_rgb, rows):
     plt.close(fig)
 
 
-def process(net, path, frames, out_dir, device):
+def process(net, path, frames, out_dir, device, tile):
     """Segment and analyse the frames of one file. Returns one metrics row per frame."""
     name = os.path.splitext(os.path.basename(path))[0]
     frames = [normalise(f) for f in frames]
     classes, colours, graphs, rows = [], [], [], []
     for i, frame in enumerate(frames):
-        seg = classify(net, frame, device)
+        seg = segment(net, frame, device, tile)
         skeleton_graph, graph = tubule_graph(seg)
         classes.append(seg)
         colours.append(colourise(seg))
@@ -258,6 +275,7 @@ def main():
     p.add_argument("images", nargs="+", help="images or TIFF stacks to segment")
     p.add_argument("--out", default="results", help="output folder")
     p.add_argument("--weights", default=os.path.join(HERE, WEIGHTS_NAME), help="path to the model file")
+    p.add_argument("--tile", type=int, default=1024, help="largest side processed in one pass, in pixels")
     p.add_argument("--cpu", action="store_true", help="run on CPU even if a GPU is available")
     args = p.parse_args()
 
@@ -273,7 +291,7 @@ def main():
         except Exception as err:  # the readers raise many different types for a bad file
             print("Skipping %s: %s" % (path, err))
             continue
-        rows += process(net, path, frames, args.out, device)
+        rows += process(net, path, frames, args.out, device, args.tile)
     if not rows:
         raise SystemExit("Nothing was segmented.")
     with open(os.path.join(args.out, "ernet_metrics.csv"), "w", newline="") as f:
