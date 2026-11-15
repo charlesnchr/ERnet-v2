@@ -17,7 +17,6 @@ from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
 import random
-import parser
 import os
 import shutil
 import matplotlib.pyplot as plt
@@ -52,7 +51,7 @@ def generate_ER_images(
 ):
     def voronoi(P):
         delauny = Delaunay(P)
-        triangles = delauny.points[delauny.vertices]
+        triangles = delauny.points[delauny.simplices]
 
         lines = []
 
