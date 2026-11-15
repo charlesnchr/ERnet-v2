@@ -1,13 +1,15 @@
-"""Segment endoplasmic reticulum images with the pre-trained ERnet model.
+"""Segment endoplasmic reticulum images with the pre-trained ERnet model and
+measure the topology of the tubular network.
 
     python segment.py cell.png timelapse.tif --out results
 
 Inputs are greyscale images (PNG, JPG, TIFF) or TIFF stacks of frames. For every
-input the script writes the class map and a colour rendering. The weights are
-downloaded on first use.
+input the script writes the class map and a colour rendering. One row per frame
+goes to ernet_metrics.csv. The weights are downloaded on first use.
 """
 
 import argparse
+import csv
 import hashlib
 import os
 import sys
@@ -17,10 +19,14 @@ import numpy as np
 import tifffile
 import torch
 from PIL import Image
+from skimage.morphology import skeletonize
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.join(HERE, "Training", "archs"))
+sys.path[:0] = [os.path.join(HERE, "Training", "archs"), os.path.join(HERE, "Inference")]
 
+import networkx as nx  # noqa: E402
+import sknw  # noqa: E402
+from graph_processing import binariseImage, build_graph, simple_analysis  # noqa: E402
 from swinir_rcab_arch import SwinIR_RCAB  # noqa: E402
 
 RELEASE = "https://github.com/charlesnchr/ERnet-v2/releases/download/v2.0/"
@@ -35,6 +41,10 @@ BACKGROUND, SHEET, SBT, TUBULE = 0, 85, 170, 255
 OUTPUT_TO_GREY = np.array([BACKGROUND, SBT, TUBULE, SHEET], dtype="uint8")
 COLOURS = {TUBULE: (0, 200, 255), SHEET: (255, 200, 0), SBT: (255, 60, 170)}
 WINDOW = 4  # the attention window, image sides are padded to a multiple of it
+
+COLUMNS = ["file", "frame", "tubule_fraction", "sheet_fraction", "sbt_fraction",
+           "nodes", "edges", "assortativity", "clustering", "fragments",
+           "node_assembly_ratio", "edge_assembly_ratio"] + ["degree_%d" % d for d in range(1, 7)]
 
 
 def download(name, dest):
@@ -103,6 +113,28 @@ def classify(net, frame, device):
     return OUTPUT_TO_GREY[index]
 
 
+def tubule_graph(classes):
+    """Skeletonise the tubule class and return its graph of junctions and tubules."""
+    skeleton = skeletonize(binariseImage(classes) / 255).astype(np.uint16)
+    graph = sknw.build_sknw(skeleton)
+    return build_graph(graph.nodes(), np.array(graph.edges()))
+
+
+def measure(classes, graph):
+    """Class fractions of the ER area and the connectivity metrics of the tubule graph."""
+    counts = [int(np.sum(classes == c)) for c in (TUBULE, SHEET, SBT)]
+    total = sum(counts)
+    row = dict.fromkeys(COLUMNS[2:12], float("nan"))  # stays undefined where there is no ER or no tubule
+    if total:
+        row.update(zip(COLUMNS[2:5], [c / total for c in counts]))
+    row.update(nodes=graph.number_of_nodes(), edges=0, fragments=nx.number_connected_components(graph))
+    if graph.number_of_edges():
+        row.update(zip(COLUMNS[5:12], simple_analysis(graph)))
+    degrees = [d for _, d in graph.degree()]
+    row.update(("degree_%d" % d, degrees.count(d)) for d in range(1, 7))
+    return row
+
+
 def colourise(classes):
     rgb = np.zeros(classes.shape + (3,), "uint8")
     for grey, colour in COLOURS.items():
@@ -111,10 +143,18 @@ def colourise(classes):
 
 
 def process(net, path, frames, out_dir, device):
-    """Segment the frames of one file and write the class map and its colour rendering."""
+    """Segment and analyse the frames of one file. Returns one metrics row per frame."""
     name = os.path.splitext(os.path.basename(path))[0]
-    classes = [classify(net, normalise(f), device) for f in frames]
-    colours = [colourise(c) for c in classes]
+    frames = [normalise(f) for f in frames]
+    classes, colours, rows = [], [], []
+    for i, frame in enumerate(frames):
+        seg = classify(net, frame, device)
+        graph = tubule_graph(seg)
+        classes.append(seg)
+        colours.append(colourise(seg))
+        rows.append(dict(file=os.path.basename(path), frame=i, **measure(seg, graph)))
+        print("  %s frame %d/%d: %d nodes, %d edges" % (name, i + 1, len(frames), rows[-1]["nodes"], rows[-1]["edges"]))
+
     base = os.path.join(out_dir, name)
     if len(frames) == 1:
         for suffix, img in (("classes", classes[0]), ("colour", colours[0])):
@@ -122,7 +162,7 @@ def process(net, path, frames, out_dir, device):
     else:
         for suffix, stack in (("classes", classes), ("colour", colours)):
             tifffile.imwrite("%s_%s.tif" % (base, suffix), np.stack(stack), compression="zlib")
-    print("  %s: %d frame%s" % (name, len(frames), "" if len(frames) == 1 else "s"))
+    return rows
 
 
 def main():
@@ -138,17 +178,22 @@ def main():
     os.makedirs(args.out, exist_ok=True)
     print("Segmenting on", device)
 
-    done = 0
+    rows = []
     for path in args.images:
         try:
             frames = read_frames(path)
         except Exception as err:  # the readers raise many different types for a bad file
             print("Skipping %s: %s" % (path, err))
             continue
-        process(net, path, frames, args.out, device)
-        done += 1
-    if not done:
+        rows += process(net, path, frames, args.out, device)
+    if not rows:
         raise SystemExit("Nothing was segmented.")
+    with open(os.path.join(args.out, "ernet_metrics.csv"), "w", newline="") as f:
+        writer = csv.DictWriter(f, COLUMNS)
+        writer.writeheader()
+        for row in rows:
+            writer.writerow({k: v if not isinstance(v, float) else "" if np.isnan(v) else "%.5f" % v
+                             for k, v in row.items()})
     print("Wrote the results to", os.path.abspath(args.out))
 
 
