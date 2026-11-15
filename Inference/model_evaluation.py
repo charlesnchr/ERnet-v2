@@ -8,7 +8,7 @@ import glob
 from skimage import io, exposure, img_as_ubyte
 from PIL import Image
 
-from tqdm.notebook import tqdm
+from tqdm.auto import tqdm
 from swinir_rcab_arch import SwinIR_RCAB
 from rcan_arch import RCAN
 
@@ -313,6 +313,7 @@ def EvaluateModel(opt):
     checkpoint = torch.load(opt.weights, map_location=device)
     print("loading checkpoint", opt.weights)
     net.load_state_dict(checkpoint["state_dict"])
+    net.eval()  # turn off stochastic depth, otherwise the output differs between runs
 
     if opt.root[0].split(".")[-1].lower() in ["png", "jpg", "tif"]:
         imgs = opt.root
