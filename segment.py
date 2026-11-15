@@ -4,8 +4,9 @@ measure the topology of the tubular network.
     python segment.py cell.png timelapse.tif --out results
 
 Inputs are greyscale images (PNG, JPG, TIFF) or TIFF stacks of frames. For every
-input the script writes the class map and a colour rendering. One row per frame
-goes to ernet_metrics.csv. The weights are downloaded on first use.
+input the script writes the class map, a colour rendering and the skeleton graph
+drawn over the image. One row per frame goes to ernet_metrics.csv. The weights
+are downloaded on first use.
 """
 
 import argparse
@@ -40,6 +41,8 @@ BACKGROUND, SHEET, SBT, TUBULE = 0, 85, 170, 255
 # The network orders its outputs as background, sheet-based tubule, tubule, sheet.
 OUTPUT_TO_GREY = np.array([BACKGROUND, SBT, TUBULE, SHEET], dtype="uint8")
 COLOURS = {TUBULE: (0, 200, 255), SHEET: (255, 200, 0), SBT: (255, 60, 170)}
+DEGREE_COLOURS = {1: (60, 220, 90), 2: (150, 150, 150), 3: (255, 70, 60)}
+MULTIWAY_COLOUR = (190, 110, 255)
 WINDOW = 4  # the attention window, image sides are padded to a multiple of it
 
 COLUMNS = ["file", "frame", "tubule_fraction", "sheet_fraction", "sbt_fraction",
@@ -114,10 +117,10 @@ def classify(net, frame, device):
 
 
 def tubule_graph(classes):
-    """Skeletonise the tubule class and return its graph of junctions and tubules."""
+    """Skeletonise the tubule class and return (skeleton graph, simplified graph)."""
     skeleton = skeletonize(binariseImage(classes) / 255).astype(np.uint16)
     graph = sknw.build_sknw(skeleton)
-    return build_graph(graph.nodes(), np.array(graph.edges()))
+    return graph, build_graph(graph.nodes(), np.array(graph.edges()))
 
 
 def measure(classes, graph):
@@ -142,25 +145,51 @@ def colourise(classes):
     return rgb
 
 
+def stamp(rgb, ys, xs, colour, radius):
+    """Paint the pixels (ys, xs) and their neighbours within radius."""
+    h, w = rgb.shape[:2]
+    for dy in range(-radius, radius + 1):
+        for dx in range(-radius, radius + 1):
+            if dy * dy + dx * dx <= radius * radius + 1:
+                rgb[np.clip(ys + dy, 0, h - 1), np.clip(xs + dx, 0, w - 1)] = colour
+
+
+def draw_graph(frame, skeleton_graph, graph):
+    """Draw the skeleton in white and the nodes, coloured by degree, over the dimmed input."""
+    rgb = np.repeat((frame * 0.45).astype("uint8")[..., None], 3, axis=2)
+    for s, e in skeleton_graph.edges():
+        pts = skeleton_graph[s][e]["pts"]
+        rgb[pts[:, 0], pts[:, 1]] = (255, 255, 255)
+    by_degree = {}
+    for node, degree in graph.degree():
+        if degree:
+            by_degree.setdefault(degree, []).append(skeleton_graph.nodes[node]["o"])
+    for degree, centres in sorted(by_degree.items()):
+        centres = np.rint(np.array(centres)).astype(int)
+        stamp(rgb, centres[:, 0], centres[:, 1], DEGREE_COLOURS.get(degree, MULTIWAY_COLOUR), 2)
+    return rgb
+
+
 def process(net, path, frames, out_dir, device):
     """Segment and analyse the frames of one file. Returns one metrics row per frame."""
     name = os.path.splitext(os.path.basename(path))[0]
     frames = [normalise(f) for f in frames]
-    classes, colours, rows = [], [], []
+    classes, colours, graphs, rows = [], [], [], []
     for i, frame in enumerate(frames):
         seg = classify(net, frame, device)
-        graph = tubule_graph(seg)
+        skeleton_graph, graph = tubule_graph(seg)
         classes.append(seg)
         colours.append(colourise(seg))
+        graphs.append(draw_graph(frame, skeleton_graph, graph))
         rows.append(dict(file=os.path.basename(path), frame=i, **measure(seg, graph)))
         print("  %s frame %d/%d: %d nodes, %d edges" % (name, i + 1, len(frames), rows[-1]["nodes"], rows[-1]["edges"]))
 
     base = os.path.join(out_dir, name)
     if len(frames) == 1:
-        for suffix, img in (("classes", classes[0]), ("colour", colours[0])):
+        for suffix, img in (("classes", classes[0]), ("colour", colours[0]), ("graph", graphs[0])):
             Image.fromarray(img).save("%s_%s.png" % (base, suffix))
     else:
-        for suffix, stack in (("classes", classes), ("colour", colours)):
+        for suffix, stack in (("classes", classes), ("colour", colours), ("graph", graphs)):
             tifffile.imwrite("%s_%s.tif" % (base, suffix), np.stack(stack), compression="zlib")
     return rows
 
