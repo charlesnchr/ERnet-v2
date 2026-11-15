@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use ERnet, please cite the paper."
+title: "ERnet"
+type: software
+authors:
+  - family-names: Christensen
+    given-names: Charles N.
+repository-code: "https://github.com/charlesnchr/ERnet-v2"
+license: GPL-3.0-only
+preferred-citation:
+  type: article
+  title: "ERnet: a tool for the semantic segmentation and quantitative analysis of endoplasmic reticulum topology"
+  authors:
+    - family-names: Lu
+      given-names: Meng
+    - family-names: Christensen
+      given-names: Charles N.
+    - family-names: Weber
+      given-names: Jana M.
+    - family-names: Konno
+      given-names: Tasuku
+    - family-names: Läubli
+      given-names: Nino F.
+    - family-names: Scherer
+      given-names: Katharina M.
+    - family-names: Avezov
+      given-names: Edward
+    - family-names: Lio
+      given-names: Pietro
+    - family-names: Lapkin
+      given-names: Alexei A.
+    - family-names: Kaminski Schierle
+      given-names: Gabriele S.
+    - family-names: Kaminski
+      given-names: Clemens F.
+  journal: "Nature Methods"
+  volume: 20
+  issue: 4
+  start: 569
+  end: 579
+  year: 2023
+  doi: "10.1038/s41592-023-01815-0"
